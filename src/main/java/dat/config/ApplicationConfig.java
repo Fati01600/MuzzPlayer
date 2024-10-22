@@ -1,51 +1,56 @@
 package dat.config;
 
-import dat.routes.Routes;
-import dat.security.controllers.AccessController;
-import dat.security.exceptions.ApiException;
-import dat.security.routes.SecurityRoutes;
-import dat.utils.Utils;
+import dat.controllers.PlaylistController;
+import dat.controllers.ProfileController;
+import dat.controllers.SongController;
+import dat.routes.MuzzPlayerRoutes;
 import io.javalin.Javalin;
 import io.javalin.config.JavalinConfig;
 import io.javalin.http.Context;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ApplicationConfig {
 
-    private static Routes routes = new Routes();
-    private static AccessController accessController = new AccessController();
     private static Logger logger = LoggerFactory.getLogger(ApplicationConfig.class);
 
-    public static void configuration (JavalinConfig config){
-        config.showJavalinBanner = false; // Disable default Javalin banner
+    private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("muzzplayer");
+
+    public static void configuration(JavalinConfig config) {
+        config.showJavalinBanner = false; // Disable the default Javalin banner
         config.bundledPlugins.enableRouteOverview("/routes");
-        config.router.contextPath = "/api/v1"; // base path for all endpoints
-        config.router.apiBuilder(routes.getRoutes());
-        config.router.apiBuilder(SecurityRoutes.getSecuredRoutes());
-        config.router.apiBuilder(SecurityRoutes.getSecurityRoutes());
+        config.router.contextPath = "/api/v1"; // Set base path for all endpoints
+
+        // Initialize your controllers and routes
+        MuzzPlayerRoutes muzzPlayerRoutes = new MuzzPlayerRoutes(
+                new ProfileController(emf),
+                new PlaylistController(emf),
+                new SongController(emf)
+        );
+        config.router.apiBuilder(muzzPlayerRoutes.getRoutes());
     }
+
     public static Javalin startServer(int port) {
+        // Create the Javalin instance
         Javalin app = Javalin.create(ApplicationConfig::configuration);
-        app.beforeMatched(accessController::accessHandler);
-        app.exception(Exception.class, ApplicationConfig::generalExceptionHandler);
-        app.exception(ApiException.class, ApplicationConfig::apiExceptionHandler);
+
+        // Exception handling (optional)
+        app.exception(Exception.class, (e, ctx) -> {
+            logger.error("An error occurred: {}", e.getMessage(), e);
+            ctx.status(500).result("An internal error occurred.");
+        });
+
+        // Start the server
         app.start(port);
         return app;
     }
+
     public static void stopServer(Javalin app) {
         app.stop();
-    }
-
-    private static void generalExceptionHandler(Exception e, Context ctx) {
-        logger.error("An unhandled exception occurred", e.getMessage());
-        ctx.json(Utils.convertToJsonMessage(ctx, "error", e.getMessage()));
-    }
-
-    public static void apiExceptionHandler(ApiException e, Context ctx) {
-        ctx.status(e.getCode());
-        logger.warn("An API exception occurred: Code: {}, Message: {}", e.getCode(), e.getMessage());
-        ctx.json(Utils.convertToJsonMessage(ctx, "warning", e.getMessage()));
+        if (emf != null && emf.isOpen()) {
+            emf.close();
+        }
     }
 }
-

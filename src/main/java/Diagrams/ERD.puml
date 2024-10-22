@@ -1,5 +1,5 @@
 @startuml
-entity "User" as U {
+entity "Profile" as PR {
   +id: Long
   +name: String
 }
@@ -18,14 +18,7 @@ entity "Song" as S {
   +genre: String
 }
 
-entity "CompatibilityResult" as CR {
-  +user1_id: Long
-  +user2_id: Long
-  +compatibilityScore: Integer
-  +sharedSongs: List<Song>
-}
-
-U ||--o{ P : "creates"
+PR ||--o{ P : "creates"
 P }o--o{ S : "contains"
-U }o--o{ CR : "is compared with"
+PR }o--o{ PR : "is compared with (compatibility)"
 @enduml

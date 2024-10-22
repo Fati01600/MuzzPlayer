@@ -1,0 +1,24 @@
+### GET request to fetch all profiles
+GET {{url}}/profiles
+Accept: application/json
+
+### GET request to fetch a profile by ID
+GET {{url}}/profiles/10
+Accept: application/json
+
+### PUT request to update a profile by ID
+PUT {{url}}/profiles/10
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "newProfileName"
+}
+
+### DELETE request to delete a profile by ID
+DELETE {{url}}/profiles/10
+Accept: application/json
+
+### GET request to check compatibility between two profiles
+GET {{url}}/profiles/1/compatibility/2
+Accept: application/json

@@ -1,7 +1,5 @@
 package dat.daos;
 
-import dat.dtos.RoomDTO;
-
 import java.util.List;
 
 public abstract class DAO<T> implements IDAO<T> {

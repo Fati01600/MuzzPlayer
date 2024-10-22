@@ -1,0 +1,33 @@
+### POST request to add songs to a playlist
+POST {{url}}/playlists/10/songs
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer <your-token-here>
+
+[
+  { "title": "Song 1", "artist": "Artist 1", "genre": "Pop" },
+  { "title": "Song 2", "artist": "Artist 2", "genre": "Jazz" }
+]
+
+### GET request to fetch all songs in a playlist
+GET {{url}}/playlists/10/songs
+Accept: application/json
+
+### GET request to fetch a specific song by ID
+GET {{url}}/songs/5
+Accept: application/json
+
+### PUT request to update a song by ID
+PUT {{url}}/songs/5
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Updated Song Title",
+  "artist": "Updated Artist",
+  "genre": "Updated Genre"
+}
+
+### DELETE request to delete a song by ID
+DELETE {{url}}/songs/5
+Accept: application/json
