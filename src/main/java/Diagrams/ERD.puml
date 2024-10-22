@@ -1,0 +1,31 @@
+@startuml
+entity "User" as U {
+  +id: Long
+  +name: String
+}
+
+entity "Playlist" as P {
+  +id: Long
+  +name: String
+  +genre: String
+  +mood: String
+}
+
+entity "Song" as S {
+  +id: Long
+  +title: String
+  +artist: String
+  +genre: String
+}
+
+entity "CompatibilityResult" as CR {
+  +user1_id: Long
+  +user2_id: Long
+  +compatibilityScore: Integer
+  +sharedSongs: List<Song>
+}
+
+U ||--o{ P : "creates"
+P }o--o{ S : "contains"
+U }o--o{ CR : "is compared with"
+@enduml

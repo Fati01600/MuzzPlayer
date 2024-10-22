@@ -1,0 +1,32 @@
+### POST an login
+POST {{url}}/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username":"Fatima",
+  "password": "1234"
+}
+
+### POST an user
+POST {{url}}/auth/user/addrole
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIkZhdGltYVwiIiwic3ViIjoiRmF0aW1hIiwiZXhwIjoxNzI4MTM0NDcxLCJyb2xlcyI6ImFkbWluIiwidXNlcm5hbWUiOiJGYXRpbWEifQ.ZJPB4Q_XcWhHjaad-oJ-6rYPxRG7Fj7inI_vX321baU
+
+
+{
+  "role": "user"
+}
+
+### POST an register
+POST {{url}}/auth/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username":"Fatima",
+  "password": "1234"
+}
+
+

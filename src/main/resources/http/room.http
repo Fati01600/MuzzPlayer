@@ -1,0 +1,127 @@
+### GET request with a header
+GET {{url}}/room
+Accept: application/json
+
+### GET request with a header by id
+GET {{url}}/room/7
+Accept: application/json
+
+### POST an arraylist of rooms
+POST {{url}}/room
+Content-Type: application/json
+Accept: application/json
+
+[
+  { "hotelId": 1, "number": "101", "price": 150.00 },
+  { "hotelId": 1, "number": "102", "price": 160.00 },
+  { "hotelId": 1, "number": "103", "price": 170.00 },
+  { "hotelId": 1, "number": "104", "price": 180.00 },
+  { "hotelId": 1, "number": "105", "price": 190.00 },
+
+  { "hotelId": 2, "number": "201", "price": 220.00 },
+  { "hotelId": 2, "number": "202", "price": 230.00 },
+  { "hotelId": 2, "number": "203", "price": 240.00 },
+  { "hotelId": 2, "number": "204", "price": 250.00 },
+  { "hotelId": 2, "number": "205", "price": 260.00 },
+
+  { "hotelId": 3, "number": "301", "price": 300.00 },
+  { "hotelId": 3, "number": "302", "price": 310.00 },
+  { "hotelId": 3, "number": "303", "price": 320.00 },
+  { "hotelId": 3, "number": "304", "price": 330.00 },
+  { "hotelId": 3, "number": "305", "price": 340.00 },
+
+  { "hotelId": 4, "number": "401", "price": 200.00 },
+  { "hotelId": 4, "number": "402", "price": 210.00 },
+  { "hotelId": 4, "number": "403", "price": 220.00 },
+  { "hotelId": 4, "number": "404", "price": 230.00 },
+  { "hotelId": 4, "number": "405", "price": 240.00 },
+
+  { "hotelId": 5, "number": "501", "price": 180.00 },
+  { "hotelId": 5, "number": "502", "price": 190.00 },
+  { "hotelId": 5, "number": "503", "price": 200.00 },
+  { "hotelId": 5, "number": "504", "price": 210.00 },
+  { "hotelId": 5, "number": "505", "price": 220.00 },
+
+  { "hotelId": 6, "number": "601", "price": 250.00 },
+  { "hotelId": 6, "number": "602", "price": 260.00 },
+  { "hotelId": 6, "number": "603", "price": 270.00 },
+  { "hotelId": 6, "number": "604", "price": 280.00 },
+  { "hotelId": 6, "number": "605", "price": 290.00 },
+
+  { "hotelId": 7, "number": "701", "price": 400.00 },
+  { "hotelId": 7, "number": "702", "price": 410.00 },
+  { "hotelId": 7, "number": "703", "price": 420.00 },
+  { "hotelId": 7, "number": "704", "price": 430.00 },
+  { "hotelId": 7, "number": "705", "price": 440.00 },
+
+  { "hotelId": 8, "number": "801", "price": 150.00 },
+  { "hotelId": 8, "number": "802", "price": 160.00 },
+  { "hotelId": 8, "number": "803", "price": 170.00 },
+  { "hotelId": 8, "number": "804", "price": 180.00 },
+  { "hotelId": 8, "number": "805", "price": 190.00 },
+
+  { "hotelId": 9, "number": "901", "price": 300.00 },
+  { "hotelId": 9, "number": "902", "price": 310.00 },
+  { "hotelId": 9, "number": "903", "price": 320.00 },
+  { "hotelId": 9, "number": "904", "price": 330.00 },
+  { "hotelId": 9, "number": "905", "price": 340.00 },
+
+  { "hotelId": 10, "number": "1001", "price": 450.00 },
+  { "hotelId": 10, "number": "1002", "price": 460.00 },
+  { "hotelId": 10, "number": "1003", "price": 470.00 },
+  { "hotelId": 10, "number": "1004", "price": 480.00 },
+  { "hotelId": 10, "number": "1005", "price": 490.00 },
+
+  { "hotelId": 11, "number": "1101", "price": 200.00 },
+  { "hotelId": 11, "number": "1102", "price": 210.00 },
+  { "hotelId": 11, "number": "1103", "price": 220.00 },
+  { "hotelId": 11, "number": "1104", "price": 230.00 },
+  { "hotelId": 11, "number": "1105", "price": 240.00 },
+
+  { "hotelId": 12, "number": "1201", "price": 300.00 },
+  { "hotelId": 12, "number": "1202", "price": 310.00 },
+  { "hotelId": 12, "number": "1203", "price": 320.00 },
+  { "hotelId": 12, "number": "1204", "price": 330.00 },
+  { "hotelId": 12, "number": "1205", "price": 340.00 },
+
+  { "hotelId": 13, "number": "1301", "price": 180.00 },
+  { "hotelId": 13, "number": "1302", "price": 190.00 },
+  { "hotelId": 13, "number": "1303", "price": 200.00 },
+  { "hotelId": 13, "number": "1304", "price": 210.00 },
+  { "hotelId": 13, "number": "1305", "price": 220.00 },
+
+  { "hotelId": 14, "number": "1401", "price": 600.00 },
+  { "hotelId": 14, "number": "1402", "price": 610.00 },
+  { "hotelId": 14, "number": "1403", "price": 620.00 },
+  { "hotelId": 14, "number": "1404", "price": 630.00 },
+  { "hotelId": 14, "number": "1405", "price": 640.00 },
+
+  { "hotelId": 15, "number": "1501", "price": 220.00 },
+  { "hotelId": 15, "number": "1502", "price": 230.00 },
+  { "hotelId": 15, "number": "1503", "price": 240.00 },
+  { "hotelId": 15, "number": "1504", "price": 250.00 },
+  { "hotelId": 15, "number": "1505", "price": 260.00 }
+]
+
+### POST an a single room
+POST {{url}}/room
+Content-Type: application/json
+Accept: application/json
+
+{
+    "hotelId": 16,
+    "number": "1601",
+    "price": 340.00
+}
+
+### UPDATE
+PUT  {{url}}/room/15
+
+ {
+    "hotelId": 3,
+    "number": "306",
+    "price": 340.00
+  }
+
+### DELETE
+DELETE {{url}}/room/13
