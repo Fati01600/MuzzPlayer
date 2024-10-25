@@ -86,7 +86,7 @@ public class UserDAO {
    }
 
 
-   public double calculateCompatibility(int id1, int id2) {
+   public double calculateCompatibility(String userOne, String userTwo) {
       EntityManager em = emf.createEntityManager();
 
       try {
@@ -94,25 +94,25 @@ public class UserDAO {
                 SELECT COUNT(s.id)
                 FROM Playlist p1
                 JOIN p1.songs s
-                WHERE p1.user.id = :id1
-                AND s IN (SELECT s2 FROM Playlist p2 JOIN p2.songs s2 WHERE p2.user.id = :id2)
+                WHERE p1.user.username = :userOne
+                AND s IN (SELECT s2 FROM Playlist p2 JOIN p2.songs s2 WHERE p2.user.username = :userTwo)
             """;
 
          Long sharedSongsCount = em.createQuery(query, Long.class)
-                 .setParameter("id1", id1)
-                 .setParameter("id2", id2)
+                 .setParameter("userOne", userOne)
+                 .setParameter("userTwo", userTwo)
                  .getSingleResult();
 
          String totalSongsQuery = """
                 SELECT COUNT(DISTINCT s.id)
                 FROM Playlist p
                 JOIN p.songs s
-                WHERE p.user.id IN (:id1, :id2)
+                WHERE p.user.username IN (:userOne, :userTwo)
             """;
 
          Long totalUniqueSongs = em.createQuery(totalSongsQuery, Long.class)
-                 .setParameter("id1", id1)
-                 .setParameter("id2", id2)
+                 .setParameter("userOne", userOne)
+                 .setParameter("userTwo", userTwo)
                  .getSingleResult();
 
          return totalUniqueSongs != null && totalUniqueSongs > 0 ? (double) sharedSongsCount / totalUniqueSongs * 100 : 0;

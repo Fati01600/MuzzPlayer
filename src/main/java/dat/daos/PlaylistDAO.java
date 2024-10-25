@@ -52,7 +52,7 @@ public class PlaylistDAO {
             playlist.addUser(user);
 
             em.getTransaction().begin();
-            em.merge(playlist);
+            playlist = em.merge(playlist);
             em.getTransaction().commit();
 
             return new PlaylistDTO(playlist);

@@ -34,7 +34,7 @@ public class UserService {
         userDAO.delete(id);
     }
 
-    public double calculateCompatibility(int id1, int id2) {
-        return userDAO.calculateCompatibility(id1, id2);
+    public double calculateCompatibility(String userOne, String userTwo) {
+        return userDAO.calculateCompatibility(userOne, userTwo);
     }
 }

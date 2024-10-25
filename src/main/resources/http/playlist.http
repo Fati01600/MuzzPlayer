@@ -2,13 +2,15 @@
 POST {{url}}/playlists
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer <your-token-here>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIkZhdGltYVwiIiwic3ViIjoiRmF0aW1hIiwiZXhwIjoxNzI5ODcxMTkzLCJyb2xlcyI6IlVTRVIiLCJ1c2VybmFtZSI6IkZhdGltYSJ9.GqP_W1TCC2jYRfxB2vGgakYnisPidhIu30k70w4CtxI
 
 {
-  "username": "",
+  "username": "Jasmin",
   "playlists":[
     {
     "name": "Chill Vibes",
+      "mood": "Relaxed",
+      "genre": "Jazz",
     "songs": [
       { "title": "Song 1", "artist": "Artist 1", "genre": "Pop" },
       { "title": "Song 2", "artist": "Artist 2", "genre": "Jazz" }
@@ -16,6 +18,8 @@ Authorization: Bearer <your-token-here>
   },
   {
     "name": "Workout Playlist",
+    "mood": "Energetic",
+    "genre": "Hip-Hop",
     "songs": [
       { "title": "Song 3", "artist": "Artist 3", "genre": "Rock" },
       { "title": "Song 4", "artist": "Artist 4", "genre": "Hip-Hop" }
@@ -23,6 +27,8 @@ Authorization: Bearer <your-token-here>
   },
   {
     "name": "Party Hits",
+    "mood": "Excited",
+    "genre": "Dance",
     "songs": [
       { "title": "Song 5", "artist": "Artist 5", "genre": "Dance" },
       { "title": "Song 6", "artist": "Artist 6", "genre": "Electro" }
@@ -30,6 +36,8 @@ Authorization: Bearer <your-token-here>
   },
   {
     "name": "Romantic Evening",
+    "mood": "In Love",
+    "genre": "R&B",
     "songs": [
       { "title": "Song 7", "artist": "Artist 7", "genre": "R&B" },
       { "title": "Song 8", "artist": "Artist 8", "genre": "Soul" }
@@ -37,6 +45,8 @@ Authorization: Bearer <your-token-here>
   },
   {
     "name": "Classical Relaxation",
+    "mood": "Calm",
+    "genre": "Classical",
     "songs": [
       { "title": "Song 9", "artist": "Artist 9", "genre": "Classical" },
       { "title": "Song 10", "artist": "Artist 10", "genre": "Opera" }
@@ -44,6 +54,8 @@ Authorization: Bearer <your-token-here>
   },
   {
     "name": "Indie Discoveries",
+    "mood": "Curious",
+    "genre": "Indie",
     "songs": [
       { "title": "Song 11", "artist": "Artist 11", "genre": "Indie Rock" },
       { "title": "Song 12", "artist": "Artist 12", "genre": "Indie Pop" }

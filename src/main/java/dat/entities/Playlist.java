@@ -30,7 +30,7 @@ public class Playlist {
     private String mood;
 
     @ManyToOne
-    @JoinColumn(name = "profile_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     @ManyToMany(cascade = CascadeType.ALL)

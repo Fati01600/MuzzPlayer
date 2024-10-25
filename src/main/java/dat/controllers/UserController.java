@@ -66,9 +66,9 @@ public class UserController {
     }
 
     public void getCompatibility(Context ctx) {
-        int id1 = Integer.parseInt(ctx.pathParam("id1"));
-        int id2 = Integer.parseInt(ctx.pathParam("id2"));
-        double compatibility = userService.calculateCompatibility(id1, id2);
+        String userOne = ctx.pathParam("id1");
+        String userTwo = ctx.pathParam("id2");
+        double compatibility = userService.calculateCompatibility(userOne, userTwo);
         if (compatibility >= 0) {
             ctx.json(Collections.singletonMap("compatibility", compatibility));
         } else {

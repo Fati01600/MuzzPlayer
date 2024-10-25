@@ -12,10 +12,9 @@ import java.util.List;
 public class PlaylistController {
 
     private final PlaylistService playlistService;
-    private final UserService userService;
 
-    public PlaylistController(PlaylistService playlistService, UserService userService) {
-        this.userService = userService;
+
+    public PlaylistController(PlaylistService playlistService) {
         this.playlistService = playlistService;
     }
 
