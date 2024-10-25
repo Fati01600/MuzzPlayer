@@ -14,7 +14,6 @@ public class SongDAO extends DAO<SongDTO> {
     private static EntityManagerFactory emf;
 
     private SongDAO() {
-        // private constructor
     }
 
     public static SongDAO getInstance(EntityManagerFactory _emf) {

@@ -4,8 +4,10 @@ Content-Type: application/json
 Accept: application/json
 Authorization: Bearer <your-token-here>
 
-[
-  {
+{
+  "username": "",
+  "playlists":[
+    {
     "name": "Chill Vibes",
     "songs": [
       { "title": "Song 1", "artist": "Artist 1", "genre": "Pop" },
@@ -48,7 +50,7 @@ Authorization: Bearer <your-token-here>
     ]
   }
 ]
-
+}
 ### GET request to fetch all playlists
 GET {{url}}/playlists
 Accept: application/json

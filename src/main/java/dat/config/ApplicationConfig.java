@@ -1,12 +1,17 @@
 package dat.config;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import dat.controllers.PlaylistController;
-import dat.controllers.ProfileController;
+import dat.controllers.UserController;
 import dat.controllers.SongController;
+import dat.security.controllers.AccessController;
+import dat.security.controllers.SecurityController;
+import dat.services.PlaylistService;
+import dat.services.UserService;
+import dat.services.SongService;
 import dat.routes.MuzzPlayerRoutes;
 import io.javalin.Javalin;
 import io.javalin.config.JavalinConfig;
-import io.javalin.http.Context;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import org.slf4j.Logger;
@@ -23,12 +28,20 @@ public class ApplicationConfig {
         config.bundledPlugins.enableRouteOverview("/routes");
         config.router.contextPath = "/api/v1"; // Set base path for all endpoints
 
-        // Initialize your controllers and routes
-        MuzzPlayerRoutes muzzPlayerRoutes = new MuzzPlayerRoutes(
-                new ProfileController(emf),
-                new PlaylistController(emf),
-                new SongController(emf)
-        );
+        // Initialize services
+        UserService userService = new UserService(emf);
+        PlaylistService playlistService = new PlaylistService(emf);
+        SongService songService = new SongService(emf);
+
+        // Initialize controllers with services
+        UserController userController = new UserController(userService);
+        PlaylistController playlistController = new PlaylistController(playlistService, userService);
+        SongController songController = new SongController(songService);
+
+        // Initialize routes
+        MuzzPlayerRoutes muzzPlayerRoutes = new MuzzPlayerRoutes(userController, playlistController, songController);
+
+        // Register routes
         config.router.apiBuilder(muzzPlayerRoutes.getRoutes());
     }
 

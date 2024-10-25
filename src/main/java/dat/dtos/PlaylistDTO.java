@@ -5,7 +5,6 @@ import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,9 +23,7 @@ public class PlaylistDTO {
         this.name = playlist.getName();
         this.genre = playlist.getGenre();
         this.mood = playlist.getMood();
-        this.songs = playlist.getSongs() != null ? playlist.getSongs().stream()
-                .map(SongDTO::new)
-                .collect(Collectors.toList()) : new ArrayList<>();
+        this.songs = SongDTO.toDTOList(playlist.getSongs());
     }
 
     public static List<PlaylistDTO> toList(List<Playlist> playlists) {

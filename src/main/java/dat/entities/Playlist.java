@@ -1,6 +1,7 @@
 package dat.entities;
 
 import dat.dtos.PlaylistDTO;
+import dat.security.entities.User;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -30,7 +31,7 @@ public class Playlist {
 
     @ManyToOne
     @JoinColumn(name = "profile_id", nullable = false)
-    private Profile profile;
+    private User user;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
@@ -39,13 +40,16 @@ public class Playlist {
             inverseJoinColumns = @JoinColumn(name = "song_id"))
     private List<Song> songs = new ArrayList<>();
 
+    // Constructor to map PlaylistDTO to Playlist entity
     public Playlist(PlaylistDTO playlistDTO) {
-        this.id = playlistDTO.getId();
         this.name = playlistDTO.getName();
         this.genre = playlistDTO.getGenre();
         this.mood = playlistDTO.getMood();
         this.songs = playlistDTO.getSongs() != null ? playlistDTO.getSongs().stream()
                 .map(Song::new)
                 .toList() : new ArrayList<>();
+    }
+    public void addUser(User user){
+        this.user = user;
     }
 }

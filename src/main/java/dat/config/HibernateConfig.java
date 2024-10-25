@@ -2,12 +2,12 @@ package dat.config;
 
 import dat.entities.Playlist;
 import dat.entities.Song;
-import dat.entities.Profile;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+import dat.security.entities.User;
 
 import java.util.Properties;
 
@@ -28,7 +28,7 @@ public class HibernateConfig {
     }
 
     private static void getAnnotationConfiguration(Configuration configuration) {
-        configuration.addAnnotatedClass(Profile.class);
+        configuration.addAnnotatedClass(User.class);
         configuration.addAnnotatedClass(Playlist.class);
         configuration.addAnnotatedClass(Song.class);
     }
@@ -60,7 +60,7 @@ public class HibernateConfig {
     private static Properties setBaseProperties(Properties props){
         props.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
         props.put("hibernate.connection.driver_class", "org.postgresql.Driver");
-        props.put("hibernate.hbm2ddl.auto", "update");
+        props.put("hibernate.hbm2ddl.auto", "create");
         props.put("hibernate.current_session_context_class", "thread");
         props.put("hibernate.show_sql", "true");
         props.put("hibernate.format_sql", "true");

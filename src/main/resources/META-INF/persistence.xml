@@ -8,14 +8,14 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- Entities  -->
-        <class>dat.entities.Profile</class>
+        <class>dat.entities.User</class>
         <class>dat.entities.Playlist</class>
         <class>dat.entities.Song</class>
 
         <!-- JDBC connection properties -->
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/poems"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/muzzplayer"/>
             <property name="jakarta.persistence.jdbc.user" value="postgres"/>
             <property name="jakarta.persistence.jdbc.password" value="postgres"/>
 

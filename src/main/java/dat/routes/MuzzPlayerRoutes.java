@@ -1,6 +1,6 @@
 package dat.routes;
 
-import dat.controllers.ProfileController;
+import dat.controllers.UserController;
 import dat.controllers.PlaylistController;
 import dat.controllers.SongController;
 import io.javalin.apibuilder.EndpointGroup;
@@ -9,29 +9,30 @@ import static io.javalin.apibuilder.ApiBuilder.*;
 
 public class MuzzPlayerRoutes {
 
-    private final ProfileController profileController;
+    private final UserController userController;
     private final PlaylistController playlistController;
     private final SongController songController;
 
-    public MuzzPlayerRoutes(ProfileController profileController, PlaylistController playlistController, SongController songController) {
-        this.profileController = profileController;
+    public MuzzPlayerRoutes(UserController userController, PlaylistController playlistController, SongController songController) {
+        this.userController = userController;
         this.playlistController = playlistController;
         this.songController = songController;
     }
 
     public EndpointGroup getRoutes() {
         return () -> {
-            path("/profiles", () -> {
-                post(profileController::createProfile);
-                get(profileController::getAllProfiles);
-                get("/{id}", profileController::getProfileById);
-                put("/{id}", profileController::updateProfile);
-                delete("/{id}", profileController::deleteProfile);
+            path("/users", () -> {
+                post(userController::createUser);
+                get(userController::getAllUsers);
+                get("/{id}", userController::getUserById);
+                put("/{id}", userController::updateUser);
+                delete("/{id}", userController::deleteUser);
 
                 // Compatibility endpoint
-                get("/{id1}/compatibility/{id2}", profileController::getCompatibility);
+                get("/{id1}/compatibility/{id2}", userController::getCompatibility);
             });
 
+            // Playlist endpoints
             path("/playlists", () -> {
                 post(playlistController::createPlaylist);
                 get(playlistController::getAllPlaylists);
@@ -40,6 +41,7 @@ public class MuzzPlayerRoutes {
                 delete("/{id}", playlistController::deletePlaylist);
             });
 
+            // Song endpoints
             path("/songs", () -> {
                 post(songController::createSong);
                 get(songController::getAllSongs);

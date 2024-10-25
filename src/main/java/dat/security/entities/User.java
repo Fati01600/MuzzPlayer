@@ -1,16 +1,21 @@
 package dat.security.entities;
 
+import dat.dtos.PlaylistDTO;
+import dat.dtos.UserDTO;
+import dat.entities.Playlist;
 import jakarta.persistence.*;
 import lombok.*;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
- * Purpose: To handle security in the API
+ * Purpose: To handle security in the API while including Profile-related fields.
  * Author: Thomas Hartmann
  */
 @Entity
@@ -30,11 +35,17 @@ public class User implements Serializable, ISecurityUser {
     @Basic(optional = false)
     @Column(name = "username", length = 25)
     private String username;
+
     @Basic(optional = false)
     @Column(name = "password")
     private String password;
 
-    @JoinTable(name = "user_roles", joinColumns = {@JoinColumn(name = "user_name", referencedColumnName = "username")}, inverseJoinColumns = {@JoinColumn(name = "role_name", referencedColumnName = "name")})
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    private List<Playlist> playlists = new ArrayList<>();
+
+    @JoinTable(name = "user_roles", joinColumns = {@JoinColumn(name = "user_name", referencedColumnName = "username")},
+            inverseJoinColumns = {@JoinColumn(name = "role_name", referencedColumnName = "name")})
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     private Set<Role> roles = new HashSet<>();
 
@@ -80,5 +91,23 @@ public class User implements Serializable, ISecurityUser {
                     role.getUsers().remove(this);
                 });
     }
-}
 
+
+    public User(String username, String password, List<PlaylistDTO> playlists) {
+        this.username = username;
+        this.password = BCrypt.hashpw(password, BCrypt.gensalt());
+        this.playlists = new ArrayList<>();
+        for (PlaylistDTO dto : playlists) {
+            this.playlists.add(new Playlist(dto));
+        }
+    }
+
+    public User(UserDTO userDTO) {
+        this.username = userDTO.getUsername();
+        this.password = userDTO.getPassword();
+        this.playlists = new ArrayList<>();
+        for (PlaylistDTO dto : userDTO.getPlaylists()) {
+            this.playlists.add(new Playlist(dto));
+        }
+    }
+}

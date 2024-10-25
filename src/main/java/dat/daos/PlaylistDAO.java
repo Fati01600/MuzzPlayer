@@ -1,41 +1,39 @@
 package dat.daos;
 
 import dat.dtos.PlaylistDTO;
+import dat.dtos.SongDTO;
 import dat.entities.Playlist;
 import dat.entities.Song;
+import dat.dtos.UserDTO;
+import dat.security.entities.User;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.TypedQuery;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class PlaylistDAO {
 
     private static PlaylistDAO instance;
     private static EntityManagerFactory emf;
 
-    private PlaylistDAO() {
-//        Singleton pattern - prevent instantiation
+    private PlaylistDAO(EntityManagerFactory _emf) {
+        emf = _emf;
     }
 
     public static PlaylistDAO getInstance(EntityManagerFactory _emf) {
         if (instance == null) {
-            instance = new PlaylistDAO();
-            emf = _emf;
+            instance = new PlaylistDAO(_emf);
         }
         return instance;
     }
 
-    // Henter alle playlister som PlaylistDTO'er
     public List<PlaylistDTO> getAll() {
         try (EntityManager em = emf.createEntityManager()) {
-            TypedQuery<Playlist> query = em.createQuery("SELECT p FROM Playlist p", Playlist.class);
-            return PlaylistDTO.toList(query.getResultList());
+            return PlaylistDTO.toList(em.createQuery("SELECT p FROM Playlist p", Playlist.class).getResultList());
         }
     }
 
-    // Finder en playliste baseret på ID og returnerer en PlaylistDTO
     public PlaylistDTO getById(int id) {
         try (EntityManager em = emf.createEntityManager()) {
             Playlist playlist = em.find(Playlist.class, id);
@@ -46,27 +44,31 @@ public class PlaylistDAO {
         return null;
     }
 
-    // Opretter en ny playliste baseret på PlaylistDTO
-    public PlaylistDTO create(PlaylistDTO playlistDTO) {
-        Playlist playlist = new Playlist(playlistDTO);
+    public PlaylistDTO create(PlaylistDTO playlistDTO, UserDTO profileDTO) {
         try (EntityManager em = emf.createEntityManager()) {
+            User user = em.find(User.class, profileDTO.getUsername());
+            Playlist playlist = new Playlist(playlistDTO);
+            playlist.setSongs(convertSongDTOsToEntities(playlistDTO.getSongs()));
+            playlist.addUser(user);
+
             em.getTransaction().begin();
-            em.persist(playlist);
+            em.merge(playlist);
             em.getTransaction().commit();
+
+            return new PlaylistDTO(playlist);
         }
-        return new PlaylistDTO(playlist);
     }
 
-    // Opdaterer playlister baseret på deres ID
+
     public PlaylistDTO update(int id, PlaylistDTO playlistDTO) {
         try (EntityManager em = emf.createEntityManager()) {
             Playlist playlist = em.find(Playlist.class, id);
             if (playlist != null) {
                 em.getTransaction().begin();
                 playlist.setName(playlistDTO.getName());
-                playlist.setSongs(playlistDTO.getSongs().stream()
-                        .map(Song::new)
-                        .collect(Collectors.toList()));
+                playlist.setGenre(playlistDTO.getGenre());
+                playlist.setMood(playlistDTO.getMood());
+                playlist.setSongs(convertSongDTOsToEntities(playlistDTO.getSongs()));
                 em.getTransaction().commit();
                 return new PlaylistDTO(playlist);
             }
@@ -74,7 +76,6 @@ public class PlaylistDAO {
         return null;
     }
 
-    // Sletter en playliste baseret på deres ID
     public void delete(int id) {
         try (EntityManager em = emf.createEntityManager()) {
             Playlist playlist = em.find(Playlist.class, id);
@@ -84,5 +85,25 @@ public class PlaylistDAO {
                 em.getTransaction().commit();
             }
         }
+    }
+
+
+    public List<PlaylistDTO> createFromList(List<PlaylistDTO> playlistDTOS, UserDTO userDTO) {
+        List<PlaylistDTO> playlistDTOList = new ArrayList<>();
+        for (int index = 0; index < playlistDTOS.size(); index++) {
+            PlaylistDTO newPlaylistDTO = create(playlistDTOS.get(index), userDTO);
+            playlistDTOList.add(newPlaylistDTO);
+        }
+        return playlistDTOList;
+    }
+
+
+    private List<Song> convertSongDTOsToEntities(List<SongDTO> songDTOs) {
+        List<Song> songs = new ArrayList<>();
+        for (SongDTO songDTO : songDTOs) {
+            Song song = new Song(songDTO);
+            songs.add(song);
+        }
+        return songs;
     }
 }

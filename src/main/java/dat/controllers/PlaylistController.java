@@ -1,29 +1,26 @@
 package dat.controllers;
 
-import dat.daos.PlaylistDAO;
 import dat.dtos.PlaylistDTO;
+import dat.dtos.UserDTO;
+import dat.services.PlaylistService;
+import dat.services.UserService;
 import io.javalin.http.Context;
 import io.javalin.http.HttpStatus;
-import jakarta.persistence.EntityManagerFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
 public class PlaylistController {
 
-    private final EntityManagerFactory emf;
-    PlaylistDAO playlistDAO;
+    private final PlaylistService playlistService;
+    private final UserService userService;
 
-    private static final Logger logger = LoggerFactory.getLogger(PlaylistController.class);
-
-    public PlaylistController(EntityManagerFactory emf) {
-        this.emf = emf;
-        this.playlistDAO = PlaylistDAO.getInstance(emf);
+    public PlaylistController(PlaylistService playlistService, UserService userService) {
+        this.userService = userService;
+        this.playlistService = playlistService;
     }
 
     public void getAllPlaylists(Context ctx) {
-        List<PlaylistDTO> playlists = playlistDAO.getAll();
+        List<PlaylistDTO> playlists = playlistService.getAllPlaylists();
         if (playlists != null) {
             ctx.json(playlists);
         } else {
@@ -33,7 +30,7 @@ public class PlaylistController {
 
     public void getPlaylistById(Context ctx) {
         int id = Integer.parseInt(ctx.pathParam("id"));
-        PlaylistDTO playlist = playlistDAO.getById(id);
+        PlaylistDTO playlist = playlistService.getPlaylistById(id);
         if (playlist != null) {
             ctx.json(playlist);
         } else {
@@ -42,15 +39,15 @@ public class PlaylistController {
     }
 
     public void createPlaylist(Context ctx) {
-        PlaylistDTO playlistDTO = ctx.bodyAsClass(PlaylistDTO.class);
-        PlaylistDTO newPlaylistDTO = playlistDAO.create(playlistDTO);
-        ctx.status(HttpStatus.CREATED).json(newPlaylistDTO);
+        UserDTO userDTO = ctx.bodyAsClass(UserDTO.class);
+        List<PlaylistDTO> newPlaylistDTOs = playlistService.createMultiplePlaylists(userDTO.getPlaylists(), userDTO);
+        ctx.status(HttpStatus.CREATED).json(newPlaylistDTOs);
     }
 
     public void updatePlaylist(Context ctx) {
         int id = Integer.parseInt(ctx.pathParam("id"));
         PlaylistDTO playlistDTO = ctx.bodyAsClass(PlaylistDTO.class);
-        PlaylistDTO updatedPlaylistDTO = playlistDAO.update(id, playlistDTO);
+        PlaylistDTO updatedPlaylistDTO = playlistService.updatePlaylist(id, playlistDTO);
         if (updatedPlaylistDTO != null) {
             ctx.status(HttpStatus.OK).json(updatedPlaylistDTO);
         } else {
@@ -60,7 +57,7 @@ public class PlaylistController {
 
     public void deletePlaylist(Context ctx) {
         int id = Integer.parseInt(ctx.pathParam("id"));
-        playlistDAO.delete(id);
+        playlistService.deletePlaylist(id);
         ctx.result("Deleted playlist with ID: " + id);
     }
 }
