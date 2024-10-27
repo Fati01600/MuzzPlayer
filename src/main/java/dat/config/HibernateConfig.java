@@ -45,7 +45,8 @@ public class HibernateConfig {
             } else if(System.getenv("DEPLOYED") != null) {
                 setDeployedProperties(props, dbName);
             } else {
-                props = setDevProperties(props, dbName);
+                setDeployedProperties(props, dbName);
+              //  props = setDevProperties(props, dbName);
             }
             configuration.setProperties(props);
             getAnnotationConfiguration(configuration);
