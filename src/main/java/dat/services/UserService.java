@@ -14,27 +14,30 @@ public class UserService {
         this.userDAO = UserDAO.getInstance(emf);
     }
 
-    public List<UserDTO> getAllUsers() {
-        return userDAO.getAll();
-    }
 
-    public UserDTO getUserById(int id) {
-        return userDAO.getById(id);
+    public List<UserDTO> getAllUsers() {
+        List<UserDTO> users = userDAO.getAll();
+        if (users.isEmpty()) {
+            throw new IllegalStateException("{ status : 404, 'msg': 'No content found' }"); // e1
+        }
+        return users;
     }
 
     public UserDTO createUser(UserDTO userDTO) {
+        if (userDTO.getUsername() == null || userDTO.getUsername().isEmpty()) {
+            throw new IllegalArgumentException("{ status : 400, 'msg': 'Invalid input: Username is required' }"); // e2
+        }
+        if (userDTO.getPassword() == null || userDTO.getPassword().isEmpty()) {
+            throw new IllegalArgumentException("{ status : 400, 'msg': 'Invalid input: Password is required' }"); // e2
+        }
         return userDAO.create(userDTO);
     }
 
-    public UserDTO updateUser(int id, UserDTO userDTO) {
-        return userDAO.update(id, userDTO);
-    }
-
-    public void deleteUser(int id) {
-        userDAO.delete(id);
-    }
-
     public double calculateCompatibility(String userOne, String userTwo) {
-        return userDAO.calculateCompatibility(userOne, userTwo);
+        double compatibility = userDAO.calculateCompatibility(userOne, userTwo);
+        if (compatibility == 0.0) {
+            throw new IllegalStateException("{ status : 404, 'msg': 'No shared songs found between users' }"); // e1
+        }
+        return compatibility;
     }
 }

@@ -40,7 +40,7 @@ public class Playlist {
             inverseJoinColumns = @JoinColumn(name = "song_id"))
     private List<Song> songs = new ArrayList<>();
 
-    // Constructor to map PlaylistDTO to Playlist entity
+
     public Playlist(PlaylistDTO playlistDTO) {
         this.name = playlistDTO.getName();
         this.genre = playlistDTO.getGenre();

@@ -106,8 +106,10 @@ public class User implements Serializable, ISecurityUser {
         this.username = userDTO.getUsername();
         this.password = userDTO.getPassword();
         this.playlists = new ArrayList<>();
-        for (PlaylistDTO dto : userDTO.getPlaylists()) {
-            this.playlists.add(new Playlist(dto));
+        if (userDTO.getPlaylists() != null){
+            for (PlaylistDTO dto : userDTO.getPlaylists()) {
+                this.playlists.add(new Playlist(dto));
+            }
         }
     }
 }

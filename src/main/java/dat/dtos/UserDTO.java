@@ -30,9 +30,9 @@ public class UserDTO {
 
 
     public UserDTO(User user) {
-        this.playlists = PlaylistDTO.toList((List<Playlist>) user);
+        this.playlists = PlaylistDTO.toList(user.getPlaylists());
         this.username = user.getUsername();
-        this.password = "";
+        this.password = user.getPassword();
         this.roles = new HashSet<>();
     }
 

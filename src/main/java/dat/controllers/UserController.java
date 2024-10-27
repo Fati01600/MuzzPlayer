@@ -1,14 +1,12 @@
 package dat.controllers;
 
-import dat.dtos.UserDTO;
 import dat.services.UserService;
 import io.javalin.http.Context;
-import io.javalin.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Collections;
-import java.util.List;
+
 
 public class UserController {
 
@@ -19,51 +17,6 @@ public class UserController {
         this.userService = userService;
     }
 
-    public void getAllUsers(Context ctx) {
-        List<UserDTO> users = userService.getAllUsers();
-        if (users != null) {
-            ctx.json(users);
-        } else {
-            ctx.status(404);
-        }
-    }
-
-    public void getUserById(Context ctx) {
-        try {
-            int id = Integer.parseInt(ctx.pathParam("id"));
-            UserDTO user = userService.getUserById(id);
-            if (user != null) {
-                ctx.json(user);
-            } else {
-                ctx.status(404).result("User not found");
-            }
-        } catch (NumberFormatException e) {
-            ctx.status(400).result("Invalid user ID format");
-        }
-    }
-
-    public void createUser(Context ctx) {
-        UserDTO userDTO = ctx.bodyAsClass(UserDTO.class);
-        UserDTO newUserDTO = userService.createUser(userDTO);
-        ctx.status(HttpStatus.CREATED).json(newUserDTO);
-    }
-
-    public void updateUser(Context ctx) {
-        int id = Integer.parseInt(ctx.pathParam("id"));
-        UserDTO userDTO = ctx.bodyAsClass(UserDTO.class);
-        UserDTO updatedUserDTO = userService.updateUser(id, userDTO);
-        if (updatedUserDTO != null) {
-            ctx.status(HttpStatus.OK).json(updatedUserDTO);
-        } else {
-            ctx.status(404).result("User not found");
-        }
-    }
-
-    public void deleteUser(Context ctx) {
-        int id = Integer.parseInt(ctx.pathParam("id"));
-        userService.deleteUser(id);
-        ctx.result("Deleted user with ID: " + id);
-    }
 
     public void getCompatibility(Context ctx) {
         String userOne = ctx.pathParam("id1");

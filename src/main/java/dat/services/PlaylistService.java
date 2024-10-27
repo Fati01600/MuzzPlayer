@@ -23,8 +23,18 @@ public class PlaylistService {
         return playlistDAO.getById(id);
     }
 
-
     public List<PlaylistDTO> createMultiplePlaylists(List<PlaylistDTO> playlistDTOs, UserDTO user) {
+        for (PlaylistDTO playlistDTO : playlistDTOs) {
+            if (playlistDTO.getName() == null || playlistDTO.getName().isEmpty()) {
+                throw new IllegalArgumentException("{ status : 400, 'msg': 'Invalid input: Playlist name cannot be null or empty' }"); // e2
+            }
+            long count = playlistDTOs.stream()
+                    .filter(p -> p.getName().equals(playlistDTO.getName()))
+                    .count();
+            if (count > 1) {
+                throw new IllegalStateException("{ status : 409, 'msg': 'Conflict: Duplicate playlist name detected in request' }"); // e3
+            }
+        }
         return playlistDAO.createFromList(playlistDTOs, user);
     }
 

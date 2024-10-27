@@ -1,7 +1,8 @@
 @startuml
-entity "Profile" as PR {
+entity "User" as U {
   +id: Long
-  +name: String
+  +username: String
+  +password: String
 }
 
 entity "Playlist" as P {
@@ -18,7 +19,7 @@ entity "Song" as S {
   +genre: String
 }
 
-PR ||--o{ P : "creates"
+U ||--o{ P : "creates"
 P }o--o{ S : "contains"
-PR }o--o{ PR : "is compared with (compatibility)"
+U }o--o{ U : "is compared with (compatibility)"
 @enduml
