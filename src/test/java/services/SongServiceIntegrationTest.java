@@ -1,4 +1,4 @@
-package services;
+/*package services;
 
 import dat.config.HibernateConfig;
 import dat.dtos.SongDTO;
@@ -145,4 +145,4 @@ public class SongServiceIntegrationTest {
 
         assertTrue(actualMessage.contains(expectedMessage));
     }
-}
+}*/

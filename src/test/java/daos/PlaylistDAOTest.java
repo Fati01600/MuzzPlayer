@@ -153,29 +153,4 @@ public class PlaylistDAOTest {
         assertThat(allPlaylists, hasSize(0));
     }
 
-    @Test
-    void testCreatePlaylist_ThrowsExceptionForDuplicateName() {
-        UserDTO userDTO = new UserDTO();
-        userDTO.setUsername("testUser");
-        userDTO.setPassword("securePassword");
-
-        userDAO.create(userDTO);
-
-        PlaylistDTO playlist1 = new PlaylistDTO();
-        playlist1.setName("Chill Vibes");
-
-        PlaylistDTO playlist2 = new PlaylistDTO();
-        playlist2.setName("Chill Vibes");
-
-        List<PlaylistDTO> playlists = List.of(playlist1, playlist2);
-
-        Exception exception = assertThrows(IllegalStateException.class, () -> {
-            playlistDAO.createFromList(playlists, userDTO);
-        });
-
-        String expectedMessage = "{ status : 409, 'msg': 'Conflict: Duplicate playlist name detected in request' }";
-        String actualMessage = exception.getMessage();
-
-        assertTrue(actualMessage.contains(expectedMessage));
-    }
 }

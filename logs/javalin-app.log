@@ -17013,3 +17013,1074 @@ org.hibernate.PersistentObjectException: detached entity passed to persist: dat.
 2024-10-27 17:01:56 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
 2024-10-27 17:03:51 [JettyServerThreadPool-23] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[user])
 2024-10-27 17:03:52 [JettyServerThreadPool-23] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-10-27 20:28:32 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-10-27 20:28:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-27 20:28:32 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-27 20:28:32 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 20:28:32 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-27 20:28:32 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-27 20:28:32 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 20:28:32 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 20:28:32 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 20:28:33 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 20:28:34 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 20:28:34 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@32da97fd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 20:28:35 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 20:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-27 20:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-27 20:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 20:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 20:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 20:28:36 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 20:28:36 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@598657cd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 20:28:37 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-10-27 20:28:37 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-10-27 20:28:37 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-10-27 20:28:37 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3a72e2e8{/api/v1,null,AVAILABLE}
+2024-10-27 20:28:37 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@580ffea{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-10-27 20:28:37 [main] INFO  org.eclipse.jetty.server.Server - Started Server@17d816b3{STARTING}[11.0.23,sto=0] @5475ms
+2024-10-27 20:28:37 [main] INFO  io.javalin.Javalin - Javalin started in 281ms \o/
+2024-10-27 20:28:37 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-10-27 20:28:37 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
+2024-10-27 20:37:53 [JettyServerThreadPool-25] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-27 20:37:53 [JettyServerThreadPool-25] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-10-27 20:38:19 [JettyServerThreadPool-27] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-27 20:38:19 [JettyServerThreadPool-27] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-10-27 20:40:00 [JettyServerThreadPool-24] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-27 20:40:00 [JettyServerThreadPool-24] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-10-27 20:47:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-10-27 20:47:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-27 20:47:18 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-27 20:47:18 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 20:47:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-27 20:47:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-27 20:47:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 20:47:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 20:47:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 20:47:19 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 20:47:19 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 20:47:20 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@641ed324] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 20:47:20 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 20:47:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-27 20:47:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-27 20:47:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 20:47:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 20:47:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 20:47:20 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 20:47:20 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3ef2b8e5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 20:47:21 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-10-27 20:47:21 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-10-27 20:47:21 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-10-27 20:47:21 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@67a6a2d0{/api/v1,null,AVAILABLE}
+2024-10-27 20:47:21 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@4f3fec43{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-10-27 20:47:21 [main] INFO  org.eclipse.jetty.server.Server - Started Server@377e573a{STARTING}[11.0.23,sto=0] @3698ms
+2024-10-27 20:47:21 [main] INFO  io.javalin.Javalin - Javalin started in 163ms \o/
+2024-10-27 20:47:21 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-10-27 20:47:21 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
+2024-10-27 20:47:24 [JettyServerThreadPool-33] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-27 20:48:24 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-27 20:48:25 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-27 20:48:25 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-27 20:48:25 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-27 20:48:26 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-27 20:48:26 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-27 20:48:27 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: b9b8842e4326e069e5208b4135c5f15e2e24c905ffe354a4f15fdab09662b49f
+2024-10-27 20:48:28 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT2.4290607S
+2024-10-27 20:48:28 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-27 20:48:28 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-27 20:48:28 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-27 20:48:28 [main] INFO  tc.postgres:13 - Creating container for image: postgres:13
+2024-10-27 20:48:28 [main] INFO  tc.postgres:13 - Container postgres:13 is starting: 99b77f02206ceb5a8b7e857e7c32c497e77bcdac95746cdc684a7dcf9cbc8c80
+2024-10-27 20:48:30 [main] INFO  tc.postgres:13 - Container postgres:13 started in PT2.2600373S
+2024-10-27 20:48:30 [main] INFO  tc.postgres:13 - Container is started (JDBC URL: jdbc:postgresql://localhost:52067/test_db?loggerLevel=OFF)
+2024-10-27 20:48:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-27 20:48:30 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-27 20:48:31 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 20:48:31 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-27 20:48:31 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-27 20:48:31 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 20:48:31 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 20:48:31 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 20:48:31 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-27 20:48:31 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: 626c3d42f16107bded52684a69bb816d3a353e8eefd68931add129c40c2141d0
+2024-10-27 20:48:33 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT2.1794508S
+2024-10-27 20:48:33 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:52068/test?loggerLevel=OFF)
+2024-10-27 20:48:33 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 20:48:34 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@67a38] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 20:48:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-27 20:48:34 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4cd8db31] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 21:19:23 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-27 21:19:23 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-27 21:19:23 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-27 21:19:23 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-27 21:19:23 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-27 21:19:23 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-27 21:19:24 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 797cde16f36ef4194cd4a153bddde2fb35fba9b28c0b5dbb796591910cf6cc36
+2024-10-27 21:19:24 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.885828S
+2024-10-27 21:19:24 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-27 21:19:24 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-27 21:19:24 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-27 21:19:24 [main] INFO  tc.postgres:13 - Creating container for image: postgres:13
+2024-10-27 21:19:24 [main] INFO  tc.postgres:13 - Container postgres:13 is starting: 62f8ba0dc7cacb8615368560b3ecd0b2c90a66096a01ac0552f532633d37fd0f
+2024-10-27 21:19:26 [main] INFO  tc.postgres:13 - Container postgres:13 started in PT1.4863891S
+2024-10-27 21:19:26 [main] INFO  tc.postgres:13 - Container is started (JDBC URL: jdbc:postgresql://localhost:62069/test_db?loggerLevel=OFF)
+2024-10-27 21:19:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-27 21:19:26 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-27 21:19:26 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 21:19:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-27 21:19:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-27 21:19:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 21:19:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 21:19:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 21:19:26 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-27 21:19:26 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: cf26327711f7c64c6677c1c504831a1bf390c3fa891d0d3236af696cd1b6c3a6
+2024-10-27 21:19:28 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.7703548S
+2024-10-27 21:19:28 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:62070/test?loggerLevel=OFF)
+2024-10-27 21:19:28 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 21:19:29 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2d4a0671] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-27 21:19:29 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-27 21:19:29 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@13662609] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 21:20:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-10-27 21:20:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-27 21:20:01 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-27 21:20:02 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 21:20:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-27 21:20:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-27 21:20:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 21:20:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 21:20:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 21:20:02 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 21:20:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 21:20:03 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@640c216b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 21:20:03 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 21:20:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-27 21:20:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-27 21:20:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 21:20:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 21:20:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 21:20:04 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 21:20:04 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2342f1ff] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 21:20:04 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-10-27 21:20:04 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-10-27 21:20:04 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-10-27 21:20:04 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@40a28bda{/api/v1,null,AVAILABLE}
+2024-10-27 21:20:04 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@59371066{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-10-27 21:20:04 [main] INFO  org.eclipse.jetty.server.Server - Started Server@460f1cdb{STARTING}[11.0.23,sto=0] @3155ms
+2024-10-27 21:20:04 [main] INFO  io.javalin.Javalin - Javalin started in 161ms \o/
+2024-10-27 21:20:04 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-10-27 21:20:04 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
+2024-10-27 21:23:58 [JettyServerThreadPool-21] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[user])
+2024-10-27 21:23:58 [JettyServerThreadPool-21] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-10-27 21:24:07 [JettyServerThreadPool-32] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[user])
+2024-10-27 21:24:07 [JettyServerThreadPool-32] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-10-27 21:26:18 [JettyServerThreadPool-21] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Jasmin, password=null, roles=[USER])
+2024-10-27 21:26:18 [JettyServerThreadPool-21] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-10-27 21:27:09 [JettyServerThreadPool-25] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Jasmin, password=null, roles=[USER])
+2024-10-27 21:27:09 [JettyServerThreadPool-25] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-10-27 23:02:59 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-10-27 23:02:59 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-27 23:02:59 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-27 23:03:00 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 23:03:00 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-27 23:03:00 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-27 23:03:00 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 23:03:00 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 23:03:00 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 23:03:00 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 23:03:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 23:03:01 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@64440065] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 23:03:01 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-27 23:03:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-27 23:03:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-27 23:03:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-27 23:03:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-27 23:03:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-27 23:03:01 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-27 23:03:01 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@456aa471] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-27 23:03:02 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-10-27 23:03:02 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-10-27 23:03:02 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-10-27 23:03:02 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@42401b81{/api/v1,null,AVAILABLE}
+2024-10-27 23:03:02 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@191e654{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-10-27 23:03:02 [main] INFO  org.eclipse.jetty.server.Server - Started Server@126675fd{STARTING}[11.0.23,sto=0] @3012ms
+2024-10-27 23:03:02 [main] INFO  io.javalin.Javalin - Javalin started in 140ms \o/
+2024-10-27 23:03:02 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-10-27 23:03:02 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
+2024-10-27 23:05:14 [JettyServerThreadPool-28] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-27 23:05:14 [JettyServerThreadPool-28] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-10-27 23:05:39 [JettyServerThreadPool-24] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-28 00:44:20 [JettyServerThreadPool-23] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Jasmin, password=null, roles=[USER])
+2024-10-28 00:48:05 [JettyServerThreadPool-36] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Jasmin, password=null, roles=[user])
+2024-10-28 03:57:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-10-28 03:57:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 03:57:30 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 03:57:30 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 03:57:30 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 03:57:30 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 03:57:30 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 03:57:30 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 03:57:30 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 03:57:31 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 03:57:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 03:57:32 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@28554ac8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 03:57:33 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 03:57:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 03:57:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 03:57:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 03:57:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 03:57:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 03:57:33 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 03:57:33 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4efb13f1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 03:57:34 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-10-28 03:57:34 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-10-28 03:57:34 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-10-28 03:57:34 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@23df7fad{/api/v1,null,AVAILABLE}
+2024-10-28 03:57:34 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@35e75f7a{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-10-28 03:57:34 [main] INFO  org.eclipse.jetty.server.Server - Started Server@6e7e0259{STARTING}[11.0.23,sto=0] @5288ms
+2024-10-28 03:57:34 [main] INFO  io.javalin.Javalin - Javalin started in 194ms \o/
+2024-10-28 03:57:34 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-10-28 03:57:34 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
+2024-10-28 04:21:04 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-10-28 04:21:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 04:21:04 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 04:21:05 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 04:21:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 04:21:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 04:21:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 04:21:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 04:21:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 04:21:05 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 04:21:06 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 04:21:06 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@32da97fd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 04:21:06 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 04:21:06 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 04:21:06 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 04:21:06 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 04:21:06 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 04:21:06 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 04:21:06 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 04:21:06 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@598657cd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 04:21:07 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-10-28 04:21:07 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-10-28 04:21:07 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-10-28 04:21:07 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3a72e2e8{/api/v1,null,AVAILABLE}
+2024-10-28 04:21:07 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@580ffea{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-10-28 04:21:07 [main] INFO  org.eclipse.jetty.server.Server - Started Server@17d816b3{STARTING}[11.0.23,sto=0] @2825ms
+2024-10-28 04:21:07 [main] INFO  io.javalin.Javalin - Javalin started in 142ms \o/
+2024-10-28 04:21:07 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-10-28 04:21:07 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
+2024-10-28 04:26:59 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-10-28 04:26:59 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 04:26:59 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 04:26:59 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 04:26:59 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 04:26:59 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 04:26:59 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 04:26:59 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 04:26:59 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 04:27:00 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 04:27:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 04:27:01 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4fc6e776] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 04:27:01 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 04:27:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 04:27:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 04:27:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 04:27:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 04:27:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 04:27:01 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 04:27:01 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e2bc2f4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 04:27:01 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-10-28 04:27:01 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-10-28 04:27:02 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-10-28 04:27:02 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@51813065{/api/v1,null,AVAILABLE}
+2024-10-28 04:27:02 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@69b37f5c{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-10-28 04:27:02 [main] INFO  org.eclipse.jetty.server.Server - Started Server@478530cb{STARTING}[11.0.23,sto=0] @2953ms
+2024-10-28 04:27:02 [main] INFO  io.javalin.Javalin - Javalin started in 143ms \o/
+2024-10-28 04:27:02 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-10-28 04:27:02 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
+2024-10-28 04:28:33 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-10-28 04:28:33 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 04:28:33 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 04:28:33 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 04:28:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 04:28:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 04:28:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 04:28:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 04:28:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 04:28:34 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 04:28:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 04:28:35 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1c7cd434] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 04:28:35 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 04:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 04:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 04:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 04:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 04:28:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 04:28:35 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 04:28:35 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@15e08615] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 04:28:35 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-10-28 04:28:35 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-10-28 04:28:35 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-10-28 04:28:35 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@cf9bd1e{/api/v1,null,AVAILABLE}
+2024-10-28 04:28:35 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@26f75d9c{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-10-28 04:28:35 [main] INFO  org.eclipse.jetty.server.Server - Started Server@3c346c45{STARTING}[11.0.23,sto=0] @2748ms
+2024-10-28 04:28:35 [main] INFO  io.javalin.Javalin - Javalin started in 140ms \o/
+2024-10-28 04:28:36 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-10-28 04:28:36 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
+2024-10-28 04:31:51 [JettyServerThreadPool-27] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Jasmin, password=null, roles=[USER])
+2024-10-28 04:32:53 [JettyServerThreadPool-21] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-28 04:33:34 [JettyServerThreadPool-34] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-28 04:34:12 [JettyServerThreadPool-24] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-28 04:36:12 [JettyServerThreadPool-35] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])
+2024-10-28 06:39:22 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 06:39:23 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 06:39:23 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 06:39:23 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 06:39:23 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 06:39:23 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 06:39:24 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 5011ff902fb33a752479ea5bc6381c6ab3a9e1dea87d1b2853b59b25a0feb244
+2024-10-28 06:39:24 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT1.2571678S
+2024-10-28 06:39:24 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 06:39:24 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 06:39:25 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 06:39:25 [main] INFO  tc.postgres:13 - Creating container for image: postgres:13
+2024-10-28 06:39:25 [main] INFO  tc.postgres:13 - Container postgres:13 is starting: f3f2fbe62d953d7605b7f69cba6791dcdf82093b3bd2633d49d9672e0db518b0
+2024-10-28 06:39:26 [main] INFO  tc.postgres:13 - Container postgres:13 started in PT1.7671998S
+2024-10-28 06:39:26 [main] INFO  tc.postgres:13 - Container is started (JDBC URL: jdbc:postgresql://localhost:54989/test_db?loggerLevel=OFF)
+2024-10-28 06:39:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 06:39:26 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 06:39:26 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 06:39:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 06:39:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 06:39:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 06:39:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 06:39:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 06:39:26 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 06:39:27 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: 7379e8e3ca6b65b821d3c781f074569dbc05f55418bd1e8f912cbd20bf438108
+2024-10-28 06:39:28 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.7490672S
+2024-10-28 06:39:28 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:54992/test?loggerLevel=OFF)
+2024-10-28 06:39:29 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 06:39:30 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3bcedb06] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:39:30 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 06:39:30 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4c000cc4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 06:40:13 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 06:40:13 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 06:40:14 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 06:40:14 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 06:40:14 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 06:40:14 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 06:40:14 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: b3189ba535aa33a52c350172a7bf03c23b93c4e8145181e939f284f495c9f0db
+2024-10-28 06:40:14 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.6786356S
+2024-10-28 06:40:14 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 06:40:14 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 06:40:14 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 06:40:14 [main] INFO  tc.postgres:13 - Creating container for image: postgres:13
+2024-10-28 06:40:14 [main] INFO  tc.postgres:13 - Container postgres:13 is starting: 42aeb838925086b7a7f9169377f0c25992d6a5896bce4b956336043e15cfccff
+2024-10-28 06:40:16 [main] INFO  tc.postgres:13 - Container postgres:13 started in PT1.2883337S
+2024-10-28 06:40:16 [main] INFO  tc.postgres:13 - Container is started (JDBC URL: jdbc:postgresql://localhost:55001/test_db?loggerLevel=OFF)
+2024-10-28 06:40:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 06:40:16 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 06:40:16 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 06:40:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 06:40:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 06:40:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 06:40:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 06:40:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 06:40:16 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 06:40:16 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: b3272d34eb972cc7cdf386827a0fbfb7b6140c693b93301d8aaa951c43b8c483
+2024-10-28 06:40:17 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.4247719S
+2024-10-28 06:40:17 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55002/test?loggerLevel=OFF)
+2024-10-28 06:40:18 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 06:40:19 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@31b650e9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:40:19 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 06:40:19 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@ecf028c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 06:45:09 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 06:45:09 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 06:45:09 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 06:45:09 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 06:45:09 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 06:45:09 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 06:45:10 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 46e584ccdb69322501c5ccff9837ac588a8caa1745cad26fd93a4da1119c19b2
+2024-10-28 06:45:10 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.7975493S
+2024-10-28 06:45:10 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 06:45:10 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 06:45:10 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 06:45:10 [main] INFO  tc.postgres:13 - Creating container for image: postgres:13
+2024-10-28 06:45:10 [main] INFO  tc.postgres:13 - Container postgres:13 is starting: 2bad5770a96db40c0245cc0b53b916a0785c1857c672093a64008ef2aa40e6a4
+2024-10-28 06:45:11 [main] INFO  tc.postgres:13 - Container postgres:13 started in PT1.1897838S
+2024-10-28 06:45:11 [main] INFO  tc.postgres:13 - Container is started (JDBC URL: jdbc:postgresql://localhost:55033/test_db?loggerLevel=OFF)
+2024-10-28 06:45:12 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 06:45:12 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 06:45:12 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 06:45:12 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 06:45:12 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 06:45:12 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 06:45:12 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 06:45:12 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 06:45:12 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 06:45:12 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: 9014d863072f54f1628c398adfe69331ecc7f6a8e2ea1a2359304fd7afed1cea
+2024-10-28 06:45:13 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.3529902S
+2024-10-28 06:45:13 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55034/test?loggerLevel=OFF)
+2024-10-28 06:45:14 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 06:45:14 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1bea7b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:45:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 06:45:14 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@38968752] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 06:46:01 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 06:46:02 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 06:46:02 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 06:46:02 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 06:46:02 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 06:46:02 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 06:46:02 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 3fba0314b0454a60fec07574072c7d17d1124ee4d751e6794033342cf1f896fc
+2024-10-28 06:46:02 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.6269121S
+2024-10-28 06:46:02 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 06:46:02 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 06:46:02 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 06:46:02 [main] INFO  tc.postgres:13 - Creating container for image: postgres:13
+2024-10-28 06:46:02 [main] INFO  tc.postgres:13 - Container postgres:13 is starting: a8156decaa230c18e544411a5b464fe8495a68ab0f7bf52ab0c14e3b272ca2bc
+2024-10-28 06:46:04 [main] INFO  tc.postgres:13 - Container postgres:13 started in PT1.1340152S
+2024-10-28 06:46:04 [main] INFO  tc.postgres:13 - Container is started (JDBC URL: jdbc:postgresql://localhost:55055/test_db?loggerLevel=OFF)
+2024-10-28 06:46:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 06:46:04 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 06:46:04 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 06:46:04 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 06:46:04 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 06:46:04 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 06:46:04 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 06:46:04 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 06:46:04 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 06:46:04 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: 9cd3c7544f873736ffd137d273596923a035d31815f389917144a51d7e3606f1
+2024-10-28 06:46:05 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.3211356S
+2024-10-28 06:46:05 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55056/test?loggerLevel=OFF)
+2024-10-28 06:46:06 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 06:46:07 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1bea7b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 06:46:07 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 06:46:07 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@38968752] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:06:32 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 08:06:32 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 08:06:33 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 08:06:33 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 08:06:33 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 08:06:33 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 08:06:33 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 8b583691b87775ad7dc42510b41709da181a69aab2bf633765825b571ef94115
+2024-10-28 08:06:34 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT1.1532841S
+2024-10-28 08:06:34 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 08:06:34 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 08:06:34 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 08:06:34 [main] INFO  tc.postgres:13 - Creating container for image: postgres:13
+2024-10-28 08:06:34 [main] INFO  tc.postgres:13 - Container postgres:13 is starting: 0d8f68fb09dac51405eb0939a8cefcf7532f625006f8452a290e274f18b706aa
+2024-10-28 08:06:36 [main] INFO  tc.postgres:13 - Container postgres:13 started in PT1.778223S
+2024-10-28 08:06:36 [main] INFO  tc.postgres:13 - Container is started (JDBC URL: jdbc:postgresql://localhost:55666/test_db?loggerLevel=OFF)
+2024-10-28 08:06:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 08:06:36 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 08:06:36 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:06:36 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 08:06:36 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 08:06:36 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:06:36 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:06:36 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:06:36 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 08:06:36 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: bcc5d863edb228df4a6f9fd31f8afc6c612d9b1fb4a38f7592fd7ede9bf9cfe6
+2024-10-28 08:06:38 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.868212S
+2024-10-28 08:06:38 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55668/test?loggerLevel=OFF)
+2024-10-28 08:06:38 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:06:40 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@16d4024e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:06:40 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 08:06:40 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1a4cbcc6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:10:08 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 08:10:08 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 08:10:08 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 08:10:08 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 08:10:08 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 08:10:08 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 08:10:08 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 81dca9d6056d3319215096c293fdcd1b17c41ff1751b7330d654e249e28dc4f2
+2024-10-28 08:10:09 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.7928013S
+2024-10-28 08:10:09 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 08:10:09 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 08:10:09 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 08:10:09 [main] INFO  tc.postgres:13 - Creating container for image: postgres:13
+2024-10-28 08:10:09 [main] INFO  tc.postgres:13 - Container postgres:13 is starting: faf6e3d14d65b77ef8cef42dc6bdc5f27d461c209435492e0860edcde3ff99ac
+2024-10-28 08:10:10 [main] INFO  tc.postgres:13 - Container postgres:13 started in PT1.3692938S
+2024-10-28 08:10:10 [main] INFO  tc.postgres:13 - Container is started (JDBC URL: jdbc:postgresql://localhost:55705/test_db?loggerLevel=OFF)
+2024-10-28 08:10:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 08:10:10 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 08:10:10 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:10:10 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 08:10:10 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 08:10:10 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:10:10 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:10:10 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:10:10 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 08:10:11 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: d7a917db231bf7d7805bc756cd54a2fb9acee5b33a8acee78b482d9ece672821
+2024-10-28 08:10:12 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.5674916S
+2024-10-28 08:10:12 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55706/test?loggerLevel=OFF)
+2024-10-28 08:10:13 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:10:14 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@31433df9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:10:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 08:10:14 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6294e4a6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:13:54 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 08:13:55 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 08:13:55 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 08:13:55 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 08:13:55 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 08:13:55 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 08:13:55 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: aaf227e67c871fcc5d523866b24e6750443235b3d846ca11c2105d6775e4245c
+2024-10-28 08:13:56 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.7272953S
+2024-10-28 08:13:56 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 08:13:56 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 08:13:56 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 08:13:56 [main] INFO  tc.postgres:13 - Creating container for image: postgres:13
+2024-10-28 08:13:56 [main] INFO  tc.postgres:13 - Container postgres:13 is starting: 9362aa60317baa7c302d12912e9aa34dddecc208f14c884581f6d9ca47b78823
+2024-10-28 08:13:57 [main] INFO  tc.postgres:13 - Container postgres:13 started in PT1.3561668S
+2024-10-28 08:13:57 [main] INFO  tc.postgres:13 - Container is started (JDBC URL: jdbc:postgresql://localhost:55739/test_db?loggerLevel=OFF)
+2024-10-28 08:13:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 08:13:57 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 08:13:57 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:13:57 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 08:13:57 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 08:13:57 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:13:57 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:13:57 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:13:57 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 08:13:57 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: 9f7909c4c8f31c8d52fbc4e0367cd297c41dde3e9c201aa36ba398ea73a2b5ea
+2024-10-28 08:13:59 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.5169495S
+2024-10-28 08:13:59 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55740/test?loggerLevel=OFF)
+2024-10-28 08:13:59 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:14:00 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1bea7b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:14:00 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 08:14:00 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@38968752] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:16:14 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 08:16:14 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 08:16:15 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 08:16:15 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 08:16:15 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 08:16:15 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 08:16:15 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: a66683d04f58ae34914c7c0d65a8133e5fcb2632b06de40c8fc20d62a7fc2dca
+2024-10-28 08:16:16 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.7351985S
+2024-10-28 08:16:16 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 08:16:16 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 08:16:16 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 08:16:16 [main] INFO  tc.postgres:15.3-alpine - Creating container for image: postgres:15.3-alpine
+2024-10-28 08:16:16 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine is starting: 9d576a1bca32262e76dbe0567526fd6109906edcb9f7bc385c190d24e96061d9
+2024-10-28 08:16:17 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine started in PT1.5156368S
+2024-10-28 08:16:17 [main] INFO  tc.postgres:15.3-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:55767/test_db?loggerLevel=OFF)
+2024-10-28 08:16:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 08:16:17 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 08:16:17 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:16:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 08:16:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 08:16:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:16:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:16:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:16:17 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 08:16:17 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: b2b7b82c9f6cf30ff1da1021480c1d770e56c41d143e17d50fb007d4ce9bc3e7
+2024-10-28 08:16:19 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.5591143S
+2024-10-28 08:16:19 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55768/test?loggerLevel=OFF)
+2024-10-28 08:16:19 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:16:20 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3684d2c0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:16:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 08:16:20 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47d9c01] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:18:00 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 08:18:00 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 08:18:00 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 08:18:00 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 08:18:00 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 08:18:00 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 08:18:00 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 2d501c9cb2d54d0c6b0ea1aa8659f9ab0bb4977775b3193460f26ce8ff92db4d
+2024-10-28 08:18:01 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.7389823S
+2024-10-28 08:18:01 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 08:18:01 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 08:18:01 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 08:18:01 [main] INFO  tc.postgres:15.3-alpine - Creating container for image: postgres:15.3-alpine
+2024-10-28 08:18:01 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine is starting: 029b3cefb81d5a76b67cbe7fed9fb83fe846afba7db490f9796a7cfebd0f015d
+2024-10-28 08:18:02 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine started in PT1.4291454S
+2024-10-28 08:18:02 [main] INFO  tc.postgres:15.3-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:55792/test_db?loggerLevel=OFF)
+2024-10-28 08:18:02 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 08:18:02 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 08:18:03 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:18:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 08:18:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 08:18:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:18:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:18:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:18:03 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 08:18:03 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: f2c79083e6e24707ac0a5d7ca9772e9cf68ca060b9875e3414cd46e39ca41c22
+2024-10-28 08:18:04 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.401819S
+2024-10-28 08:18:04 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55794/test?loggerLevel=OFF)
+2024-10-28 08:18:05 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:18:05 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2d4a0671] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:18:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 08:18:05 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@13662609] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:21:59 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 08:21:59 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 08:21:59 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 08:21:59 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 08:21:59 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 08:21:59 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 08:22:00 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 34de7a79d9db0b23c5ec918d26f1c133ca3df5bde2de53bc5c912cf02ac09c1f
+2024-10-28 08:22:00 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.8264837S
+2024-10-28 08:22:00 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 08:22:00 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 08:22:00 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 08:22:00 [main] INFO  tc.postgres:15.3-alpine - Creating container for image: postgres:15.3-alpine
+2024-10-28 08:22:00 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine is starting: a514e05083e407563bdde9dfe2e7f9d7527059c6c2f72b25b251ef11e43b13fc
+2024-10-28 08:22:02 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine started in PT1.5836593S
+2024-10-28 08:22:02 [main] INFO  tc.postgres:15.3-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:55830/test_db?loggerLevel=OFF)
+2024-10-28 08:22:02 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 08:22:02 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 08:22:02 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:22:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 08:22:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 08:22:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:22:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:22:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:22:02 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 08:22:02 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: cf2f0372cd52f9ad176ca683a545dda267cda1af1b6175fc23c6304c3a37c78c
+2024-10-28 08:22:04 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.4724696S
+2024-10-28 08:22:04 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55831/test?loggerLevel=OFF)
+2024-10-28 08:22:04 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:22:05 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1bea7b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:22:05 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 08:22:05 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@38968752] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:25:06 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 08:25:06 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 08:25:07 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 08:25:07 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 08:25:07 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 08:25:07 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 08:25:07 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: df6a5b784ff2765ca6863f3abcd404f0067e540ffa2218a5c7d4a3f23befc20b
+2024-10-28 08:25:07 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.7373437S
+2024-10-28 08:25:07 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 08:25:07 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 08:25:07 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 08:25:07 [main] INFO  tc.postgres:15.3-alpine - Creating container for image: postgres:15.3-alpine
+2024-10-28 08:25:08 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine is starting: ca02e9eb61c740ec0956f5c4aed6b0e3e5f7b98cc8c6ab50910523d4a6c00776
+2024-10-28 08:25:09 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine started in PT1.5494736S
+2024-10-28 08:25:09 [main] INFO  tc.postgres:15.3-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:55862/test_db?loggerLevel=OFF)
+2024-10-28 08:25:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 08:25:09 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 08:25:09 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:25:09 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 08:25:09 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 08:25:09 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:25:09 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:25:09 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:25:09 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 08:25:09 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: bc5b0df912568ba335fa3c759582da600427909ad901435cd8f4d44a71b75bb9
+2024-10-28 08:25:11 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.6177121S
+2024-10-28 08:25:11 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55864/test?loggerLevel=OFF)
+2024-10-28 08:25:11 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:25:12 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@31183ee2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:25:12 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 08:25:12 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@752494dd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:28:08 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-10-28 08:28:08 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-10-28 08:28:08 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-10-28 08:28:08 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-10-28 08:28:08 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-10-28 08:28:08 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+2024-10-28 08:28:08 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 002496c133fe686963e859adcc5e511f93e3a7b5500b2b7c5e0f845c6dd7a750
+2024-10-28 08:28:09 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.759762S
+2024-10-28 08:28:09 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-10-28 08:28:09 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-10-28 08:28:09 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-10-28 08:28:09 [main] INFO  tc.postgres:15.3-alpine - Creating container for image: postgres:15.3-alpine
+2024-10-28 08:28:09 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine is starting: 6515279bb2eb59b384fd0e4b87056fea8bc6b085f12874e4ac7236573f89ce1e
+2024-10-28 08:28:10 [main] INFO  tc.postgres:15.3-alpine - Container postgres:15.3-alpine started in PT1.4695299S
+2024-10-28 08:28:10 [main] INFO  tc.postgres:15.3-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:55910/test_db?loggerLevel=OFF)
+2024-10-28 08:28:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 08:28:10 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 08:28:11 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:28:11 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2024-10-28 08:28:11 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2024-10-28 08:28:11 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:28:11 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:28:11 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:28:11 [main] INFO  tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2024-10-28 08:28:11 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: b7ce23591fb26922c9822f17b9bf816c5911f1683cb604d57bbd8e7573b62825
+2024-10-28 08:28:12 [main] INFO  tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT1.475275S
+2024-10-28 08:28:12 [main] INFO  tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55911/test?loggerLevel=OFF)
+2024-10-28 08:28:13 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:28:14 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@35d114f4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "playlist_song" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "playlist_song" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "song" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-28 08:28:14 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-10-28 08:28:14 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1d5048d1] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:31:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-10-28 08:31:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-10-28 08:31:16 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-10-28 08:31:16 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:31:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 08:31:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 08:31:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:31:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:31:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:31:17 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:31:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-28 08:31:18 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@314b7945] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:31:18 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-10-28 08:31:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-10-28 08:31:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-10-28 08:31:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-10-28 08:31:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-10-28 08:31:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-10-28 08:31:18 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-10-28 08:31:18 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7f93f4c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-10-28 08:31:19 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-10-28 08:31:19 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-10-28 08:31:19 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-10-28 08:31:19 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4a105556{/api/v1,null,AVAILABLE}
+2024-10-28 08:31:19 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2d4e99de{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-10-28 08:31:19 [main] INFO  org.eclipse.jetty.server.Server - Started Server@177ddd24{STARTING}[11.0.23,sto=0] @3362ms
+2024-10-28 08:31:19 [main] INFO  io.javalin.Javalin - Javalin started in 216ms \o/
+2024-10-28 08:31:19 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-10-28 08:31:19 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024).
+2024-10-28 08:31:59 [JettyServerThreadPool-25] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Fatima, password=null, roles=[USER])

@@ -32,7 +32,7 @@ public class UserDTO {
     public UserDTO(User user) {
         this.playlists = PlaylistDTO.toList(user.getPlaylists());
         this.username = user.getUsername();
-        this.password = user.getPassword();
+        this.password = "";
         this.roles = new HashSet<>();
     }
 
@@ -43,10 +43,6 @@ public class UserDTO {
         this.roles = new HashSet<>();
     }
 
-
-    public static List<UserDTO> toDTOList(List<User> users) {
-        return users.stream().map(UserDTO::new).toList();
-    }
 
     @Override
     public boolean equals(Object o) {

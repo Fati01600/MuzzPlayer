@@ -30,116 +30,79 @@ public class PlaylistDAO {
 
     public List<PlaylistDTO> getAll() {
         try (EntityManager em = emf.createEntityManager()) {
-            List<Playlist> playlists = em.createQuery("SELECT p FROM Playlist p", Playlist.class).getResultList();
-            return PlaylistDTO.toList(playlists);
+            return PlaylistDTO.toList(em.createQuery("SELECT p FROM Playlist p", Playlist.class).getResultList());
         }
     }
 
     public PlaylistDTO getById(int id) {
         try (EntityManager em = emf.createEntityManager()) {
             Playlist playlist = em.find(Playlist.class, id);
-            if (playlist == null) {
-                throw new IllegalStateException("{ status : 404, 'msg': 'Resource not found' }");
+            if (playlist != null) {
+                return new PlaylistDTO(playlist);
             }
-            return new PlaylistDTO(playlist);
         }
+        return null;
     }
 
-    public PlaylistDTO create(PlaylistDTO playlistDTO, UserDTO userDTO) {
-        if (playlistDTO.getName() == null || playlistDTO.getName().isEmpty()) {
-            throw new IllegalArgumentException("{ status : 400, 'msg': 'Invalid input: Required fields are missing' }");
-        }
-
-        EntityManager em = emf.createEntityManager();
-        try {
-            em.getTransaction().begin();
-
-
-            long count = em.createQuery(
-                            "SELECT COUNT(p) FROM Playlist p WHERE p.name = :name AND p.user.username = :username", Long.class)
-                    .setParameter("name", playlistDTO.getName())
-                    .setParameter("username", userDTO.getUsername())
-                    .getSingleResult();
-
-            if (count > 0) {
-                throw new IllegalStateException("{ status : 409, 'msg': 'Conflict: Duplicate playlist name detected in request' }");
-            }
-
-            User user = em.find(User.class, userDTO.getUsername());
+    public PlaylistDTO create(PlaylistDTO playlistDTO, UserDTO UserDTO) {
+        try (EntityManager em = emf.createEntityManager()) {
+            User user = em.find(User.class, UserDTO.getUsername());
             Playlist playlist = new Playlist(playlistDTO);
             playlist.setSongs(convertSongDTOsToEntities(playlistDTO.getSongs()));
             playlist.addUser(user);
 
-            em.persist(playlist);
+            em.getTransaction().begin();
+            playlist = em.merge(playlist);
             em.getTransaction().commit();
 
             return new PlaylistDTO(playlist);
-        } catch (Exception e) {
-            if (em.getTransaction().isActive()) {
-                em.getTransaction().rollback();
-            }
-            throw e;
-        } finally {
-            em.close();
         }
     }
 
+
     public PlaylistDTO update(int id, PlaylistDTO playlistDTO) {
-        EntityManager em = emf.createEntityManager();
-        try {
-            em.getTransaction().begin();
+        try (EntityManager em = emf.createEntityManager()) {
             Playlist playlist = em.find(Playlist.class, id);
-            if (playlist == null) {
-                throw new IllegalStateException("{ status : 404, 'msg': 'Resource not found' }");
+            if (playlist != null) {
+                em.getTransaction().begin();
+                playlist.setName(playlistDTO.getName());
+                playlist.setGenre(playlistDTO.getGenre());
+                playlist.setMood(playlistDTO.getMood());
+                playlist.setSongs(convertSongDTOsToEntities(playlistDTO.getSongs()));
+                em.getTransaction().commit();
+                return new PlaylistDTO(playlist);
             }
-            playlist.setName(playlistDTO.getName());
-            playlist.setGenre(playlistDTO.getGenre());
-            playlist.setMood(playlistDTO.getMood());
-            playlist.setSongs(convertSongDTOsToEntities(playlistDTO.getSongs()));
-            em.getTransaction().commit();
-            return new PlaylistDTO(playlist);
-        } catch (Exception e) {
-            if (em.getTransaction().isActive()) {
-                em.getTransaction().rollback();
-            }
-            throw e;
-        } finally {
-            em.close();
         }
+        return null;
     }
 
     public void delete(int id) {
-        EntityManager em = emf.createEntityManager();
-        try {
-            em.getTransaction().begin();
+        try (EntityManager em = emf.createEntityManager()) {
             Playlist playlist = em.find(Playlist.class, id);
-            if (playlist == null) {
-                throw new IllegalStateException("{ status : 404, 'msg': 'Resource not found' }");
+            if (playlist != null) {
+                em.getTransaction().begin();
+                em.remove(playlist);
+                em.getTransaction().commit();
             }
-            em.remove(playlist);
-            em.getTransaction().commit();
-        } catch (Exception e) {
-            if (em.getTransaction().isActive()) {
-                em.getTransaction().rollback();
-            }
-            throw e;
-        } finally {
-            em.close();
         }
     }
 
+
     public List<PlaylistDTO> createFromList(List<PlaylistDTO> playlistDTOS, UserDTO userDTO) {
         List<PlaylistDTO> playlistDTOList = new ArrayList<>();
-        for (PlaylistDTO playlistDTO : playlistDTOS) {
-            playlistDTOList.add(create(playlistDTO, userDTO));
+        for (int index = 0; index < playlistDTOS.size(); index++) {
+            PlaylistDTO newPlaylistDTO = create(playlistDTOS.get(index), userDTO);
+            playlistDTOList.add(newPlaylistDTO);
         }
         return playlistDTOList;
     }
 
+
     private List<Song> convertSongDTOsToEntities(List<SongDTO> songDTOs) {
         List<Song> songs = new ArrayList<>();
         for (SongDTO songDTO : songDTOs) {
-            songs.add(new Song(songDTO));
+            Song song = new Song(songDTO);
+            songs.add(song);
         }
         return songs;
     }

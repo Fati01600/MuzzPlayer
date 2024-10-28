@@ -4,7 +4,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "username":"Fatima",
+  "username":"Jasmin",
   "password": "1234"
 }
 
@@ -25,7 +25,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "username":"Fatima",
+  "username":"Tom",
   "password": "1234"
 }
 

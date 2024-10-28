@@ -59,6 +59,7 @@ public class HibernateConfig {
         }
     }
 
+
     private static Properties setBaseProperties(Properties props){
         props.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
         props.put("hibernate.connection.driver_class", "org.postgresql.Driver");
@@ -76,6 +77,7 @@ public class HibernateConfig {
         props.setProperty("hibernate.connection.password", System.getenv("DB_PASSWORD"));
         return props;
     }
+
 
     private static Properties setDevProperties(Properties props, String dbName){
         props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/"+ dbName);

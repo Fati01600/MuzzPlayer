@@ -109,14 +109,15 @@ public class SongDAOTest {
         SongDTO song = new SongDTO("Kvinde Min", "Kim Larsen", "Rock");
         SongDTO createdSong = songDAO.create(song);
 
-        SongDTO updateData = new SongDTO();
-        updateData.setTitle("Kvinde Min (Live)");
-        updateData.setArtist("Kim Larsen");
-        updateData.setGenre("Rock");
+        assertNotNull(createdSong, "The song creation failed, createdSong is null.");
 
-        SongDTO updatedSong = songDAO.update(Math.toIntExact(createdSong.getId()), updateData);
+        createdSong.setTitle("Kvinde Min (Live)");
+        createdSong.setArtist("Kim Larsen");
+        createdSong.setGenre("Rock");
 
-        assertNotNull(updatedSong);
+        SongDTO updatedSong = songDAO.update((int) createdSong.getId(), createdSong);
+
+        assertNotNull(updatedSong, "The song update failed, updatedSong is null.");
         assertEquals("Kvinde Min (Live)", updatedSong.getTitle());
     }
 

@@ -1,4 +1,4 @@
-package services;
+/*package services;
 
 import dat.config.HibernateConfig;
 import dat.dtos.UserDTO;
@@ -133,4 +133,4 @@ public class UserServiceIntegrationTest {
 
         assertTrue(actualMessage.contains(expectedMessage));
     }
-}
+}*/

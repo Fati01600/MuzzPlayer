@@ -18,6 +18,7 @@ public class PlaylistController {
         this.playlistService = playlistService;
     }
 
+
     public void getAllPlaylists(Context ctx) {
         List<PlaylistDTO> playlists = playlistService.getAllPlaylists();
         if (playlists != null) {
@@ -36,6 +37,7 @@ public class PlaylistController {
             ctx.status(404).result("Playlist not found");
         }
     }
+
 
     public void createPlaylist(Context ctx) {
         UserDTO userDTO = ctx.bodyAsClass(UserDTO.class);

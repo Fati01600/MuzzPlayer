@@ -34,7 +34,7 @@ public class AccessController implements IAccessController {
         } catch (UnauthorizedResponse e) {
             throw new UnauthorizedResponse(e.getMessage());
         } catch (Exception e) {
-            throw new UnauthorizedResponse("You need to log in, dude! Or you token is invalid.");
+            throw new UnauthorizedResponse("Pssshhhh, you forgot to log in, pookie!! Your token is invalid.");
         }
 
         // Check if the user has the necessary roles to access the route
