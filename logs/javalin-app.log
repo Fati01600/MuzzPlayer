@@ -18350,3 +18350,32 @@ java.lang.IllegalStateException: Cannot get a connection as the driver manager i
 2024-12-10 11:17:22 [main] INFO  io.javalin.Javalin - Javalin started in 303ms \o/
 2024-12-10 11:17:22 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
 2024-12-10 11:17:22 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024. Your Javalin version is 109 days old. Consider checking for a newer version.).
+2024-12-10 11:17:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: muzzplayer]
+2024-12-10 11:17:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-12-10 11:17:44 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-10 11:17:45 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-10 11:17:45 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-12-10 11:17:45 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-12-10 11:17:45 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-10 11:17:45 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-12-10 11:17:45 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-12-10 11:17:46 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-10 11:17:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-10 11:17:47 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4aa22cc2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-10 11:17:47 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-10 11:17:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-12-10 11:17:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-12-10 11:17:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-10 11:17:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-12-10 11:17:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-12-10 11:17:47 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-10 11:17:47 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@69e2fe3b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-10 11:17:48 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-12-10 11:17:48 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-12-10 11:17:48 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-12-10 11:17:48 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@f1d1463{/api/v1,null,AVAILABLE}
+2024-12-10 11:17:48 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3a6556b6{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-12-10 11:17:48 [main] INFO  org.eclipse.jetty.server.Server - Started Server@2c0dca15{STARTING}[11.0.23,sto=0] @3802ms
+2024-12-10 11:17:48 [main] INFO  io.javalin.Javalin - Javalin started in 244ms \o/
+2024-12-10 11:17:48 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-12-10 11:17:48 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024. Your Javalin version is 109 days old. Consider checking for a newer version.).
