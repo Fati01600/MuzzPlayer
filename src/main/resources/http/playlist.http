@@ -2,7 +2,7 @@
 POST {{url}}/playlists
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIkZhdGltYVwiIiwic3ViIjoiSmFzbWluIiwiZXhwIjoxNzMwMTAyNzc2LCJyb2xlcyI6IlVTRVIiLCJ1c2VybmFtZSI6Ikphc21pbiJ9.18YxtWr4pFrjw8MOq2JKdXKjpcbSmBkkjsqH7ySAY-g
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIkZhdGltYVwiIiwic3ViIjoiSmFzbWluIiwiZXhwIjoxNzMzMjQ1NDY4LCJyb2xlcyI6InVzZXIiLCJ1c2VybmFtZSI6Ikphc21pbiJ9.-bycQFPEG1nLdMGe00qXq3zHdL-fdMj0nb2WsNvNPp4
 
 {
   "username": "Jasmin",

@@ -1,5 +1,5 @@
 ### GET request to check compatibility between two users
-GET {{url}}/users/Fatima/compatibility/Jasmin
+GET {{url}}/users/Jasmin/compatibility/Tom
 Accept: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIkZhdGltYVwiIiwic3ViIjoiSmFzbWluIiwiZXhwIjoxNzMwMTAyNzc2LCJyb2xlcyI6IlVTRVIiLCJ1c2VybmFtZSI6Ikphc21pbiJ9.18YxtWr4pFrjw8MOq2JKdXKjpcbSmBkkjsqH7ySAY-g
 
