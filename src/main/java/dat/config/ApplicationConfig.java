@@ -25,7 +25,7 @@ public class ApplicationConfig {
 
     private static Logger logger = LoggerFactory.getLogger(ApplicationConfig.class);
 
-    private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("muzzplayer");
+    private static final EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
     private static ObjectMapper jsonMapper = new Utils().getObjectMapper();
     private static SecurityController securityController = SecurityController.getInstance();
     private static AccessController accessController = new AccessController();
