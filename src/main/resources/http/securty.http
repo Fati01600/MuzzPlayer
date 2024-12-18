@@ -4,20 +4,26 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "username":"Jasmin",
+  "username":"Jon",
   "password": "1234"
 }
 
-### POST an user
-POST {{url}}/auth/user/addrole
-Content-Type: application/json
-Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIkZhdGltYVwiIiwic3ViIjoiSmFzbWluIiwiZXhwIjoxNzMzMjQyODgxLCJyb2xlcyI6IlVTRVIiLCJ1c2VybmFtZSI6Ikphc21pbiJ9.CIhOnmzMM_S-cWBB1JnyprQYdF2syKfrxirXxmZjddc
+> {%
+    client.global.set("jwt_token", response.body.token);
+    console.log("JWT Token:", client.global.get("jwt_token"));
+%}
 
+### Add admin role to user
+POST {{url}}/auth/user/addrole/
+Accept: application/json
+Authorization: Bearer {{jwt_token}}
 
 {
-  "role": "user"
+    "role": "admin"
 }
+Accept: application/json
+Authorization: Bearer {{jwt_token}}
+
 
 ### POST an register
 POST {{url}}/auth/register
@@ -25,7 +31,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "username":"Jasmin",
+  "username":"Jon",
   "password": "1234"
 }
 
