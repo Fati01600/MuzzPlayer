@@ -4,7 +4,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "username":"Jon",
+  "username":"Admin",
   "password": "1234"
 }
 
@@ -19,7 +19,7 @@ Accept: application/json
 Authorization: Bearer {{jwt_token}}
 
 {
-    "role": "admin"
+    "role": "ADMIN"
 }
 Accept: application/json
 Authorization: Bearer {{jwt_token}}
@@ -31,7 +31,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "username":"Jon",
+  "username":"Admin",
   "password": "1234"
 }
 
