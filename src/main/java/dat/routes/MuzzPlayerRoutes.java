@@ -25,7 +25,8 @@ public class MuzzPlayerRoutes {
     public EndpointGroup getRoutes() {
         return () -> {
             path("/users", () -> {
-
+                // Slette-bruger-ruten
+                delete("/{username}", userController::deleteUser, Role.ADMIN);
 
                 // Compatibility endpoint
                 get("/{id1}/compatibility/{id2}", userController::getCompatibility, Role.USER);
@@ -42,10 +43,10 @@ public class MuzzPlayerRoutes {
 
             // Song endpoints
             path("/songs", () -> {
-                post(songController::createSong,Role.ADMIN);
-                get(songController::getAllSongs,Role.ANYONE);
-                get("/{id}", songController::getSongById,Role.ANYONE);
-                put("/{id}", songController::updateSong,Role.ADMIN);
+                post(songController::createSong, Role.ADMIN);
+                get(songController::getAllSongs, Role.ANYONE);
+                get("/{id}", songController::getSongById, Role.ANYONE);
+                put("/{id}", songController::updateSong, Role.ADMIN);
                 delete("/{id}", songController::deleteSong, Role.ADMIN);
             });
         };

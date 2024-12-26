@@ -17,6 +17,12 @@ public class UserController {
         this.userService = userService;
     }
 
+    public void deleteUser(Context ctx) {
+        String username = ctx.pathParam("username");
+        userService.deleteUser(username);
+        ctx.result("Deleted user with username: " + username);
+    }
+
 
     public void getCompatibility(Context ctx) {
         String userOne = ctx.pathParam("id1");
@@ -27,5 +33,6 @@ public class UserController {
         } else {
             ctx.status(404).result("One or both users not found");
         }
+
     }
 }

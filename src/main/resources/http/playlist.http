@@ -2,10 +2,10 @@
 POST {{url}}/playlists
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIkZhdGltYVwiIiwic3ViIjoiSmFzbWluIiwiZXhwIjoxNzMzMjQ1NDY4LCJyb2xlcyI6InVzZXIiLCJ1c2VybmFtZSI6Ikphc21pbiJ9.-bycQFPEG1nLdMGe00qXq3zHdL-fdMj0nb2WsNvNPp4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJGYXRpbWEiLCJzdWIiOiJNZWVuYSIsImV4cCI6MTczNTI0NDc1NCwicm9sZXMiOiJ1c2VyIiwidXNlcm5hbWUiOiJNZWVuYSJ9.wUuEPklL18y-kvxQDFQYtksFq9UJDD_u8ueoFYbktmk
 
 {
-  "username": "Jasmin",
+  "username": "Jon",
   "playlists":[
     {
     "name": "Chill Vibes",

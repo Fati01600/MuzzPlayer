@@ -1,8 +1,8 @@
 ### POST request to add songs to a playlist
-POST {{url}}/playlists/10/songs
+POST {{url}}/playlists/19/songs
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer <your-token-here>
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJGYXRpbWEiLCJzdWIiOiJKb24iLCJleHAiOjE3MzUxODIwNTgsInJvbGVzIjoidXNlciIsInVzZXJuYW1lIjoiSm9uIn0.gzo8zMG6W19ZWEUXnb4XxshCZgNUsFQ8mK5bU9aG6Ls
 
 [
   { "title": "Song 1", "artist": "Artist 1", "genre": "Pop" },
@@ -10,11 +10,11 @@ Authorization: Bearer <your-token-here>
 ]
 
 ### GET request to fetch all songs in a playlist
-GET {{url}}/playlists/10/songs
+GET {{url}}/playlists/20/songs
 Accept: application/json
 
-### GET request to fetch a specific song by ID
-GET {{url}}/songs/5
+### GET request to fetch a specific song by ID "good"
+GET {{url}}/songs/40
 Accept: application/json
 
 ### PUT request to update a song by ID
@@ -29,5 +29,5 @@ Accept: application/json
 }
 
 ### DELETE request to delete a song by ID
-DELETE {{url}}/songs/5
+DELETE {{url}}/songs/40
 Accept: application/json

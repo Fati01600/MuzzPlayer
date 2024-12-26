@@ -55,16 +55,20 @@ public class UserDAO {
    }
 
 
-   public void delete(int id) {
-      try (EntityManager em = emf.createEntityManager()) {
+   public void delete(String username) {
+      EntityManager em = emf.createEntityManager();
+      try {
          em.getTransaction().begin();
-         User user = em.find(User.class, id);
+         User user = em.find(User.class, username); // Bruger username som primærnøgle
          if (user != null) {
-            em.remove(user);
+            em.remove(user); // Fjerner brugeren fra databasen
          }
          em.getTransaction().commit();
+      } finally {
+         em.close();
       }
    }
+
 
 
    public double calculateCompatibility(String userOne, String userTwo) {

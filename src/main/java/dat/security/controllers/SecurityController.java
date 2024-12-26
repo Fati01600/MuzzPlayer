@@ -68,7 +68,7 @@ public class SecurityController implements ISecurityController {
                 ctx.status(200).json(returnObject
                         .put("token", token)
                         .put("username", verifiedUser.getUsername())
-                        .put("roles", roles)); // Tilføj roller til respons
+                        .put("roles", roles));
             } catch (EntityNotFoundException | ValidationException e) {
                 ctx.status(401);
                 System.out.println(e.getMessage());

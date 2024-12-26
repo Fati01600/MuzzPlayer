@@ -13,6 +13,9 @@ public class UserService {
     public UserService(EntityManagerFactory emf) {
         this.userDAO = UserDAO.getInstance(emf);
     }
+    public void deleteUser(String username) {
+        userDAO.delete(username);
+    }
 
     public double calculateCompatibility(String userOne, String userTwo) {
         return userDAO.calculateCompatibility(userOne, userTwo);

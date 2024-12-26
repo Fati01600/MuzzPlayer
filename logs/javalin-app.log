@@ -18539,3 +18539,184 @@ java.lang.IllegalStateException: Cannot get a connection as the driver manager i
 2024-12-25 18:56:27 [main] INFO  io.javalin.Javalin - Javalin started in 261ms \o/
 2024-12-25 18:56:27 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
 2024-12-25 18:56:27 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024. Your Javalin version is 125 days old. Consider checking for a newer version.).
+2024-12-25 18:58:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-12-25 18:58:16 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-25 18:58:16 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-25 18:58:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-12-25 18:58:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-12-25 18:58:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-25 18:58:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-12-25 18:58:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-12-25 18:58:16 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-25 18:58:17 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1332dec4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-25 18:58:18 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-12-25 18:58:18 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-12-25 18:58:18 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-12-25 18:58:18 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@31f31b20{/api/v1,null,AVAILABLE}
+2024-12-25 18:58:18 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@507049f2{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-12-25 18:58:18 [main] INFO  org.eclipse.jetty.server.Server - Started Server@5889fc44{STARTING}[11.0.23,sto=0] @2681ms
+2024-12-25 18:58:18 [main] INFO  io.javalin.Javalin - Javalin started in 166ms \o/
+2024-12-25 18:58:18 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-12-25 18:58:18 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024. Your Javalin version is 125 days old. Consider checking for a newer version.).
+2024-12-25 22:54:58 [JettyServerThreadPool-41] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Admin, password=null, roles=[ADMIN])
+2024-12-25 22:54:58 [JettyServerThreadPool-41] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Admin, password=null, roles=[ADMIN])
+2024-12-25 23:03:37 [JettyServerThreadPool-55] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Admin, password=null, roles=[ADMIN])
+2024-12-25 23:03:37 [JettyServerThreadPool-40] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Admin, password=null, roles=[ADMIN])
+2024-12-25 23:07:51 [JettyServerThreadPool-40] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Admin, password=null, roles=[ADMIN])
+2024-12-25 23:07:51 [JettyServerThreadPool-48] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Admin, password=null, roles=[ADMIN])
+2024-12-25 23:08:16 [JettyServerThreadPool-57] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Admin, password=null, roles=[ADMIN])
+2024-12-25 23:08:16 [JettyServerThreadPool-57] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Admin, password=null, roles=[ADMIN])
+2024-12-26 00:04:02 [JettyServerThreadPool-74] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Jon, password=null, roles=[user])
+2024-12-26 00:44:40 [JettyServerThreadPool-82] WARN  dat.config.ApplicationConfig - An API exception occurred: Code: 400, Message: User with username:  already exists
+2024-12-26 02:20:29 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-12-26 02:20:29 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-26 02:20:29 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-26 02:20:29 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-12-26 02:20:29 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-12-26 02:20:29 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-26 02:20:29 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-12-26 02:20:29 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-12-26 02:20:30 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-26 02:20:31 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4eeab3e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-26 02:20:32 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-12-26 02:20:32 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-12-26 02:20:32 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-12-26 02:20:32 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@149d7cc6{/api/v1,null,AVAILABLE}
+2024-12-26 02:20:32 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5c9e8a67{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-12-26 02:20:32 [main] INFO  org.eclipse.jetty.server.Server - Started Server@44384b4a{STARTING}[11.0.23,sto=0] @5525ms
+2024-12-26 02:20:32 [main] INFO  io.javalin.Javalin - Javalin started in 233ms \o/
+2024-12-26 02:20:32 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-12-26 02:20:32 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024. Your Javalin version is 125 days old. Consider checking for a newer version.).
+2024-12-26 02:35:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-12-26 02:35:49 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-26 02:35:50 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-26 02:35:50 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-12-26 02:35:50 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-12-26 02:35:50 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-26 02:35:50 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-12-26 02:35:50 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-12-26 02:35:50 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-26 02:35:51 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@33e4b9c4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-26 02:35:52 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-12-26 02:35:52 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-12-26 02:35:52 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-12-26 02:35:52 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b4bd341{/api/v1,null,AVAILABLE}
+2024-12-26 02:35:52 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@baa227e{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-12-26 02:35:52 [main] INFO  org.eclipse.jetty.server.Server - Started Server@44fb6ebd{STARTING}[11.0.23,sto=0] @2732ms
+2024-12-26 02:35:52 [main] INFO  io.javalin.Javalin - Javalin started in 200ms \o/
+2024-12-26 02:35:52 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-12-26 02:35:52 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024. Your Javalin version is 125 days old. Consider checking for a newer version.).
+2024-12-26 03:28:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-12-26 03:28:01 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-26 03:28:01 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-26 03:28:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-12-26 03:28:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-12-26 03:28:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-26 03:28:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-12-26 03:28:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-12-26 03:28:02 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-26 03:28:03 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@10d18696] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-26 03:28:03 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-12-26 03:28:03 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-12-26 03:28:03 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-12-26 03:28:03 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7d28cdcd{/api/v1,null,AVAILABLE}
+2024-12-26 03:28:03 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2b682e9{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-12-26 03:28:03 [main] INFO  org.eclipse.jetty.server.Server - Started Server@5cdf221a{STARTING}[11.0.23,sto=0] @2758ms
+2024-12-26 03:28:03 [main] INFO  io.javalin.Javalin - Javalin started in 167ms \o/
+2024-12-26 03:28:03 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-12-26 03:28:03 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024. Your Javalin version is 125 days old. Consider checking for a newer version.).
+2024-12-26 03:34:42 [JettyServerThreadPool-31] ERROR dat.config.ApplicationConfig - An unhandled exception occurred
+2024-12-26 20:30:38 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-12-26 20:30:38 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-26 20:30:39 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-26 20:30:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-12-26 20:30:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-12-26 20:30:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-26 20:30:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-12-26 20:30:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-12-26 20:30:40 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-26 20:30:41 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@30abf79c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-26 20:30:42 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-12-26 20:30:42 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-12-26 20:30:42 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-12-26 20:30:42 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1231a1be{/api/v1,null,AVAILABLE}
+2024-12-26 20:30:42 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@4d4df0f4{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-12-26 20:30:42 [main] INFO  org.eclipse.jetty.server.Server - Started Server@a3b858f{STARTING}[11.0.23,sto=0] @8713ms
+2024-12-26 20:30:42 [main] INFO  io.javalin.Javalin - Javalin started in 231ms \o/
+2024-12-26 20:30:42 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-12-26 20:30:42 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024. Your Javalin version is 126 days old. Consider checking for a newer version.).
+2024-12-26 20:49:47 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-12-26 20:49:47 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-26 20:49:47 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-26 20:49:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-12-26 20:49:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-12-26 20:49:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-26 20:49:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-12-26 20:49:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-12-26 20:49:47 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:262)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:45)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:125)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:248)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:121)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:43)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:61)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:501)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:367)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:552)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:105)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:125)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:248)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:283)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:150)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:125)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:451)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:102)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:863)
+	at dat.config.HibernateConfig.createEMF(HibernateConfig.java:70)
+	at dat.config.HibernateConfig.getEntityManagerFactory(HibernateConfig.java:32)
+	at dat.config.ApplicationConfig.<clinit>(ApplicationConfig.java:28)
+	at dat.Main.main(Main.java:9)
+2024-12-26 20:49:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08001
+2024-12-26 20:49:47 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2024-12-26 20:51:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2024-12-26 20:51:54 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-26 20:51:54 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-26 20:51:54 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2024-12-26 20:51:54 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/muzzplayer]
+2024-12-26 20:51:54 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2024-12-26 20:51:54 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-12-26 20:51:54 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2024-12-26 20:51:55 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-26 20:51:56 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@26da1ba2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-26 20:51:57 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2024-12-26 20:51:57 [main] INFO  org.eclipse.jetty.server.Server - jetty-11.0.23; built: 2024-08-14T01:40:17.906Z; git: 6fcf5ccaebd7ca13a0cb96c96adca699a24080a0; jvm 17.0.13+11-LTS
+2024-12-26 20:51:57 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-12-26 20:51:57 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5a39e554{/api/v1,null,AVAILABLE}
+2024-12-26 20:51:57 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@b3fc6d8{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+2024-12-26 20:51:57 [main] INFO  org.eclipse.jetty.server.Server - Started Server@6658f08a{STARTING}[11.0.23,sto=0] @3946ms
+2024-12-26 20:51:57 [main] INFO  io.javalin.Javalin - Javalin started in 213ms \o/
+2024-12-26 20:51:57 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7777/api/v1
+2024-12-26 20:51:57 [main] INFO  io.javalin.Javalin - You are running Javalin 6.3.0 (released August 22, 2024. Your Javalin version is 126 days old. Consider checking for a newer version.).
+2024-12-26 20:56:23 [JettyServerThreadPool-24] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Meena, password=null, roles=[user])
+2024-12-26 20:57:58 [JettyServerThreadPool-24] INFO  d.s.controllers.SecurityController - User verified: UserDTO(username=Meena, password=null, roles=[user])
